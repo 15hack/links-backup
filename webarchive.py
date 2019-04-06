@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import savepagenow
-import json
 import os
 
+import savepagenow
+
 web_archive = "data/webarchive.txt"
+
 
 def get_file(name):
     lines = []
@@ -15,11 +16,12 @@ def get_file(name):
                     lines.append(l)
     return lines
 
-done=[]
+
+done = []
 for l in get_file(web_archive):
     done.append(l.split()[0])
 
-f = open(web_archive,"w+")
+f = open(web_archive, "w+")
 for l in get_file("data/links.txt"):
     if l not in done:
         print(l)
