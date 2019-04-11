@@ -7,13 +7,9 @@ from urllib.parse import urlparse
 import urllib3
 import sys
 from glob import glob
-from socket import gethostbyname, gaierror
-import re
 
 urllib3.disable_warnings()
 requests.packages.urllib3.disable_warnings()
-
-re_file_ip = re.compile(r".*?/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.txt$")
 
 web_archive = "data/webarchive.txt"
 web_archive_error = "data/webarchive_error.txt"
@@ -42,37 +38,12 @@ def parse_url(url):
         return r.headers['location']
     return url
 
-def get_ip(dom):
-    try:
-        return gethostbyname(dom)
-    except gaierror as e:
-        print("%s %s" % (dom, e))
-        return -1
+done = set(
+    get_file(web_archive, field=0) +
+    get_file(web_archive_error, field=0)
+)
 
-done = set(get_file(web_archive, field=0))
-done = done.union(set(get_file(web_archive_error, field=0)))
-
-if not os.path.isfile(txt_links):
-    ips={}
-    links=set()
-    for txt in glob("data/*.txt"):
-        m = re_file_ip.match(txt)
-        if m:
-            IP = m.group(1)
-            print(IP)
-            for l in get_file(txt):
-                if l not in done:
-                    dom = urlparse(l).netloc
-                    if dom not in ips:
-                        ips[dom] = get_ip(dom)
-                    if ips[dom] == IP:
-                        links.add(l)
-    links=sorted(links)
-    with open(txt_links, "w") as f:
-        f.write("\n".join(links))
-    print("")
-else:
-    links = get_file(txt_links)
+links = get_file(txt_links)
 
 f = open(web_archive, "a+")
 f_error = open(web_archive_error, "a+")
@@ -98,6 +69,7 @@ for l in links:
                 save(l, _l, archive_url)
             except savepagenow.api.CachedPage as e:
                 _, archive_url = str(e).rsplit(None, 1)
+                print(">", end=" ")
                 save(l, _l, archive_url)
             except Exception as e:
                 txt = "%s %s\n" % (type(e).__name__, e)
