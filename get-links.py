@@ -1,8 +1,17 @@
 #!/usr/bin/python3
 import getpass
 import os
+import sys
 
 import MySQLdb
+
+key = sys.argv[1] if len(sys.argv)==2 else None
+
+if not key:
+    sys.exit('''
+Ha de pasar un nombre de fichero para el resultado (preferentemente la ip del dominio)
+Solo el nombre, no añada ni la extenisión ni la ruta.
+    '''.strip())
 
 if 'MYSQL_USER_READ' in os.environ:
     user, passwd = os.environ['MYSQL_USER_READ'].split()
@@ -46,8 +55,11 @@ sql = sql + "\n) T order by guid"
 cursor.execute(sql)
 
 results = cursor.fetchall()
-with open("data/links.txt", "w") as f:
+out = "data/%s.txt" % (key)
+with open(out, "w") as f:
     for row in results:
         f.write(row[0]+"\n")
 
-db.close()
+db.close
+
+print("Resultado guardado en %s" % out)
