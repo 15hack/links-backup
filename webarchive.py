@@ -72,10 +72,10 @@ if not os.path.isfile(txt_links):
         f.write("\n".join(links))
     print("")
 else:
-    links = get_file("data/links.txt")
+    links = get_file(txt_links)
 
-f = open(web_archive, "w+")
-f_error = open(web_archive_error, "w+")
+f = open(web_archive, "a+")
+f_error = open(web_archive_error, "a+")
 
 def signal_handler(signal, frame):
        f.close()
