@@ -60,6 +60,6 @@ with open(out, "w") as f:
     for row in results:
         f.write(row[0]+"\n")
 
-db.close
+db.close()
 
 print("Resultado guardado en %s" % out)
