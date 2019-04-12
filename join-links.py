@@ -6,6 +6,7 @@ from socket import gethostbyname, gaierror
 import re
 
 re_file_ip = re.compile(r".*?/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.txt$")
+re_param = re.compile(r".+\?.+=(\d+)$")
 
 txt_links = "data/links.txt"
 
@@ -30,6 +31,17 @@ def get_ip(dom):
         print("%s %s" % (dom, e))
         return -1
 
+def sort_links(l):
+    l = l.replace("http://", "https://")
+    m = re_param.match(l)
+    if not m:
+        m=-1
+    else:
+        m = m.group(1)
+        l=l[:-len(m)]
+        m = int(m)
+    return (l, m)
+
 ips={}
 links=set()
 for txt in glob("data/*.txt"):
@@ -44,6 +56,6 @@ for txt in glob("data/*.txt"):
             if ips[dom] == IP:
                 links.add(l)
 
-links=sorted(links)
+links=sorted(links, key=sort_links)
 with open(txt_links, "w") as f:
     f.write("\n".join(links))
