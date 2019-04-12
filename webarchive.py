@@ -30,7 +30,7 @@ def get_file(name, field=None):
     return lines
 
 def parse_url(url):
-    url = url.replace("http://", "https://")
+    #url = url.replace("http://", "https://")
     r = requests.get(url, allow_redirects=False, verify=False)
     if int(r.status_code/100) in (4, 5):
         return None

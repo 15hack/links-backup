@@ -32,7 +32,7 @@ def get_ip(dom):
         return -1
 
 def sort_links(l):
-    l = l.replace("http://", "https://")
+    #l = l.replace("http://", "https://")
     m = re_param.match(l)
     if not m:
         m=-1
@@ -54,6 +54,7 @@ for txt in glob("data/*.txt"):
             if dom not in ips:
                 ips[dom] = get_ip(dom)
             if ips[dom] == IP:
+                l = l.replace("http://", "https://")
                 links.add(l)
 
 links=sorted(links, key=sort_links)
