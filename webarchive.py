@@ -38,12 +38,12 @@ def parse_url(url):
         return r.headers['location']
     return url
 
-done = set(
-    get_file(web_archive, field=0) +
-    get_file(web_archive_error, field=0)
-)
+ok_list = get_file(web_archive, field=0)
+ko_list = get_file(web_archive_error, field=0)
 
-links = get_file(txt_links)
+done = set(ok_list+ko_list)
+
+links = [l for l in get_file(txt_links) if l not in done]
 
 f = open(web_archive, "a+")
 f_error = open(web_archive_error, "a+")
@@ -59,14 +59,31 @@ def save(l, _l, archive_url):
     print(archive_url+"\n")
     done.add(_l)
 
+count_dom={}
+for l in ok_list:
+    dom = urlparse(l).netloc
+    ok, ko = count_dom.get(dom, (0, 0))
+    count_dom[dom]=(ok+1, ko)
+for l in ko_list:
+    dom = urlparse(l).netloc
+    ok, ko = count_dom.get(dom, (0, 0))
+    count_dom[dom]=(ok, ko+1)
+total = len(links)
+
 for l in links:
+    total = total - 1
     if l not in done:
+        dom = urlparse(l).netloc
+        ok, ko = count_dom.get(dom, (0, 0))
+        if ok==0 and ko>10:
+            continue
         _l = parse_url(l)
-        if _l and _l not in done:
-            print(_l)
+        if _l and _l not in done and dom==urlparse(_l).netloc:
+            print("%d %s" % (total, _l))
             try:
                 archive_url = savepagenow.capture(_l)
                 save(l, _l, archive_url)
+                ok = ok + 1
             except savepagenow.api.CachedPage as e:
                 _, archive_url = str(e).rsplit(None, 1)
                 print(">", end=" ")
@@ -75,6 +92,8 @@ for l in links:
                 txt = "%s %s\n" % (type(e).__name__, e)
                 f_error.write(l+" "+txt)
                 print(txt)
+                ko = ko + 1
+            count_dom[dom]=(ok, ko)
 
 f.close()
 f_error.close()
