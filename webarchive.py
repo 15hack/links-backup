@@ -59,6 +59,7 @@ def save(l, _l, archive_url):
     print(archive_url+"\n")
     done.add(_l)
 
+ban_dom=set()
 count_dom={}
 for l in ok_list:
     dom = urlparse(l).netloc
@@ -74,11 +75,16 @@ for l in links:
     total = total - 1
     if l not in done:
         dom = urlparse(l).netloc
+        if dom in ban_dom:
+            continue
         ok, ko = count_dom.get(dom, (0, 0))
         if ok==0 and ko>10:
             continue
         _l = parse_url(l)
-        if _l and _l not in done and dom==urlparse(_l).netloc:
+        if _l and _l not in done:
+            if dom!=urlparse(_l).netloc:
+                ban_dom.add(dom)
+                continue
             print("%d %s" % (total, _l))
             try:
                 archive_url = savepagenow.capture(_l)
