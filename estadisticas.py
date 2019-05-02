@@ -2,11 +2,13 @@
 import os
 import sys
 from urllib.parse import urlparse
+import re
 
 web_archive_ok = "data/webarchive_ok.txt"
 web_archive_ko = "data/webarchive_ko.txt"
 txt_links = "data/links.txt"
 
+re_http = re.compile(r":\s*\bhttps?://\S+\s*:\s*")
 
 def get_file(name):
     lines = []
@@ -45,6 +47,18 @@ def count_dom(*args):
         r.append(i)
     return tuple(r)
 
+def add(s, lst):
+    if lst is None:
+        lst = []
+    for i, v in enumerate(lst):
+        if v == s:
+            return
+        if s.startswith(v):
+            lst[i]=s
+            return
+    lst.append(s)
+    return lst
+
 links = set(get_file(txt_links))
 links_ok = set(get_file(web_archive_ok))
 links_ko = get_file(web_archive_ko)
@@ -52,9 +66,19 @@ l = len(links)
 l_ok = len(links_ok)
 l_ko = len(links_ko)
 
+errores={}
+for e in links_ko:
+    lnk, e = e.split(None, 1)
+    if lnk not in links:
+        continue
+    dom = urlparse(lnk).netloc
+    e = re_http.sub(" ", e).strip()
+    lst = errores.get(dom, None)
+    errores[dom]=add(e, lst)
+
 count_total, count_ok = count_dom(links, links_ok)
 
-write("Enlaces totales {0}", l)
+write("Enlaces totales: {0}", l)
 write("# [Web Archive](https://web.archive.org)")
 write('''
 * **OK**: {0} ({2:.0f} %)
@@ -71,10 +95,15 @@ for dom in sorted(doms, key=sort_dom):
     l_ok = count_ok.get(dom, 0)
     write(("    "* len(level)) + "* [{0}](https://web.archive.org/web/*/https://{1}/*)", s_dom, dom, end="")
     if l_ok<l:
-        por = "{0:.1f}".format(l_ok*100/l).replace(".0", "")
+        v = l_ok*100/l
+        por = "{0:.2f}" if v > 0 and v < 1 else "{0:.0f}"
+        por = por.format(v)
         write(" `{0} %`", por)
     else:
         write("")
+    err = errores.get(dom, None) or []
+    for v in sorted(err):
+        write(("    "* (len(level)+1)) + "* "+v)
     level.append(dom)
 
 out.close()
