@@ -33,7 +33,7 @@ def get_file(name, field=None):
 ok_list = get_file(web_archive_ok, field=0)
 ko_list = get_file(web_archive_ko, field=0)
 
-done = set(ok_list)#+ko_list)
+done = set(ok_list+ko_list)
 
 links = [l for l in get_file(txt_links) if l not in done]
 
