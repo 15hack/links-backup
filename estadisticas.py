@@ -8,7 +8,9 @@ web_archive_ok = "data/webarchive_ok.txt"
 web_archive_ko = "data/webarchive_ko.txt"
 txt_links = "data/links.txt"
 
-re_http = re.compile(r":\s*\bhttps?://\S+\s*:\s*")
+re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
+re_date = re.compile(r",\s*'Date':\s*'.*?'")
+re_sp = re.compile(r"\s+")
 
 def get_file(name):
     lines = []
@@ -51,11 +53,11 @@ def add(s, lst):
     if lst is None:
         lst = []
     for i, v in enumerate(lst):
-        if v == s:
-            return
+        if v == s or v.startswith(s):
+            return lst
         if s.startswith(v):
             lst[i]=s
-            return
+            return lst
     lst.append(s)
     return lst
 
@@ -72,7 +74,9 @@ for e in links_ko:
     if lnk not in links:
         continue
     dom = urlparse(lnk).netloc
-    e = re_http.sub(" ", e).strip()
+    e = re_http.sub(" ", e)
+    e = re_date.sub(" ", e)
+    e = re_sp.sub(" ", e).strip()
     lst = errores.get(dom, None)
     errores[dom]=add(e, lst)
 
@@ -93,17 +97,19 @@ for dom in sorted(doms, key=sort_dom):
     s_dom = dom if len(level)==0 else dom[:-len(level[-1])-1]
     l = count_total[dom]
     l_ok = count_ok.get(dom, 0)
-    write(("    "* len(level)) + "* [{0}](https://web.archive.org/web/*/https://{1}/*)", s_dom, dom, end="")
+    l_level = len(level)
+    write(("    "* l_level) + "* [{0}](https://web.archive.org/web/*/https://{1}/*)", s_dom, dom, end="")
     if l_ok<l:
         v = l_ok*100/l
         por = "{0:.2f}" if v > 0 and v < 1 else "{0:.0f}"
         por = por.format(v)
         write(" `{0} %`", por)
+        err = errores.get(dom, None) or []
+        l_level = l_level + 1
+        for v in sorted(err):
+            write(("    "* l_level) + "* "+v)
     else:
         write("")
-    err = errores.get(dom, None) or []
-    for v in sorted(err):
-        write(("    "* (len(level)+1)) + "* "+v)
     level.append(dom)
 
 out.close()

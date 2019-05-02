@@ -10,7 +10,9 @@ Enlaces totales: 41689
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*)
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
     * [dec10](https://web.archive.org/web/*/https://dec10.takethesquare.net/*) `91 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `20 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [may12](https://web.archive.org/web/*/https://may12.takethesquare.net/*)
@@ -20,11 +22,11 @@ Enlaces totales: 41689
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*) `99 %`
     * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*)
     * [actasmadrid](https://web.archive.org/web/*/https://actasmadrid.tomalaplaza.net/*)
     * [alcala](https://web.archive.org/web/*/https://alcala.tomalaplaza.net/*)
     * [alicante](https://web.archive.org/web/*/https://alicante.tomalaplaza.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [benicarlo](https://web.archive.org/web/*/https://benicarlo.tomalaplaza.net/*)
     * [berlinbienal](https://web.archive.org/web/*/https://berlinbienal.tomalaplaza.net/*)
     * [bilbao](https://web.archive.org/web/*/https://bilbao.tomalaplaza.net/*)
@@ -53,6 +55,8 @@ Enlaces totales: 41689
     * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `0.03 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
+        * WaybackRuntimeError {'headers': {'Content-Length': '33615', 'Content-Type': 'text/html', 'X-App-Server': 'wwwsry-sf', 'ETag': '"5b4e77d3-834f"', 'Server': 'nginx/1.15.8', 'X-ts': '----' , 'Connection': 'keep-alive'}, 'status_code': 503}
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
     * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
@@ -85,37 +89,33 @@ Enlaces totales: 41689
     * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*) `100 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [asamblea-sanlorenzo-escorial](https://web.archive.org/web/*/https://asamblea-sanlorenzo-escorial.tomalosbarrios.net/*)
     * [asambleademostoles](https://web.archive.org/web/*/https://asambleademostoles.tomalosbarrios.net/*) `2 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [asambleaplayasalicante](https://web.archive.org/web/*/https://asambleaplayasalicante.tomalosbarrios.net/*)
     * [austrias](https://web.archive.org/web/*/https://austrias.tomalosbarrios.net/*)
     * [barajas](https://web.archive.org/web/*/https://barajas.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [barriodelpilar](https://web.archive.org/web/*/https://barriodelpilar.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [barriosdelsur](https://web.archive.org/web/*/https://barriosdelsur.tomalosbarrios.net/*)
     * [batan](https://web.archive.org/web/*/https://batan.tomalosbarrios.net/*) `0 %`
-    * [becerril](https://web.archive.org/web/*/https://becerril.tomalosbarrios.net/*)
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
+    * [becerril](https://web.archive.org/web/*/https://becerril.tomalosbarrios.net/*)
     * [boadilladelmonte](https://web.archive.org/web/*/https://boadilladelmonte.tomalosbarrios.net/*)
     * [canadareal](https://web.archive.org/web/*/https://canadareal.tomalosbarrios.net/*) `94 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [cercedilla](https://web.archive.org/web/*/https://cercedilla.tomalosbarrios.net/*)
     * [chamartin](https://web.archive.org/web/*/https://chamartin.tomalosbarrios.net/*)
     * [chapineria](https://web.archive.org/web/*/https://chapineria.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [chueca](https://web.archive.org/web/*/https://chueca.tomalosbarrios.net/*)
     * [ciempozuelos](https://web.archive.org/web/*/https://ciempozuelos.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [ciudadlineal](https://web.archive.org/web/*/https://ciudadlineal.tomalosbarrios.net/*)
     * [colladomediano](https://web.archive.org/web/*/https://colladomediano.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [colladovillalba](https://web.archive.org/web/*/https://colladovillalba.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [colmenarejo](https://web.archive.org/web/*/https://colmenarejo.tomalosbarrios.net/*)
     * [colmenarviejo](https://web.archive.org/web/*/https://colmenarviejo.tomalosbarrios.net/*)
     * [coslada](https://web.archive.org/web/*/https://coslada.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [daganzodearriba](https://web.archive.org/web/*/https://daganzodearriba.tomalosbarrios.net/*)
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
     * [debatepopular](https://web.archive.org/web/*/https://debatepopular.tomalosbarrios.net/*)
@@ -129,18 +129,16 @@ Enlaces totales: 41689
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [gamonal](https://web.archive.org/web/*/https://gamonal.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [getafe](https://web.archive.org/web/*/https://getafe.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [guadalixdelasierra](https://web.archive.org/web/*/https://guadalixdelasierra.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [guadarrama](https://web.archive.org/web/*/https://guadarrama.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [guindalera](https://web.archive.org/web/*/https://guindalera.tomalosbarrios.net/*)
     * [hortaleza](https://web.archive.org/web/*/https://hortaleza.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [hoyodemanzanares](https://web.archive.org/web/*/https://hoyodemanzanares.tomalosbarrios.net/*)
     * [laconce](https://web.archive.org/web/*/https://laconce.tomalosbarrios.net/*)
     * [laelipa](https://web.archive.org/web/*/https://laelipa.tomalosbarrios.net/*)
@@ -148,20 +146,20 @@ Enlaces totales: 41689
     * [lasrozas](https://web.archive.org/web/*/https://lasrozas.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*)
     * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `0.43 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [madridsur](https://web.archive.org/web/*/https://madridsur.tomalosbarrios.net/*)
     * [majadahonda](https://web.archive.org/web/*/https://majadahonda.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [mejoradadelcampo](https://web.archive.org/web/*/https://mejoradadelcampo.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [miraflores](https://web.archive.org/web/*/https://miraflores.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*)
     * [moralzarzal](https://web.archive.org/web/*/https://moralzarzal.tomalosbarrios.net/*)
     * [navalafuente](https://web.archive.org/web/*/https://navalafuente.tomalosbarrios.net/*) `0 %`
@@ -169,20 +167,22 @@ Enlaces totales: 41689
     * [nudomanoteras](https://web.archive.org/web/*/https://nudomanoteras.tomalosbarrios.net/*)
     * [nuevobaztan](https://web.archive.org/web/*/https://nuevobaztan.tomalosbarrios.net/*)
     * [paracuellos](https://web.archive.org/web/*/https://paracuellos.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [parla](https://web.archive.org/web/*/https://parla.tomalosbarrios.net/*)
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*)
     * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `0 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*)
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*) `99 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [pozuelo](https://web.archive.org/web/*/https://pozuelo.tomalosbarrios.net/*)
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*)
     * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*)
@@ -190,14 +190,13 @@ Enlaces totales: 41689
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
     * [smvaldeiglesias](https://web.archive.org/web/*/https://smvaldeiglesias.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [soto](https://web.archive.org/web/*/https://soto.tomalosbarrios.net/*)
     * [stamariadelaalameda](https://web.archive.org/web/*/https://stamariadelaalameda.tomalosbarrios.net/*)
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*) `99 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
     * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `0 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
@@ -214,6 +213,7 @@ Enlaces totales: 41689
     * [vicalvaro](https://web.archive.org/web/*/https://vicalvaro.tomalosbarrios.net/*)
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
     * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `98 %`
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [zarzalejo](https://web.archive.org/web/*/https://zarzalejo.tomalosbarrios.net/*)
 * [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*)
 * [www.tomalatele.tv](https://web.archive.org/web/*/https://www.tomalatele.tv/*)
