@@ -63,16 +63,17 @@ def add(s, lst):
 
 links = set(get_file(txt_links))
 links_ok = set(l for l in get_file(web_archive_ok) if l in links)
-links_ko = [l for l in get_file(web_archive_ko) if l.split()[0] in links]
+links_ko = {}
+for l in get_file(web_archive_ko):
+    l, e = l.split(None, 1)
+    if l in links and l not in links_ok:
+        links_ko[l]=e
 l = len(links)
 l_ok = len(links_ok)
 l_ko = len(links_ko)
 
 errores={}
-for e in links_ko:
-    lnk, e = e.split(None, 1)
-    if lnk not in links:
-        continue
+for lnk, e in links_ko.items():
     dom = urlparse(lnk).netloc
     e = re_http.sub(" ", e)
     e = re_date.sub(" ", e)
