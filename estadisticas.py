@@ -62,8 +62,8 @@ def add(s, lst):
     return lst
 
 links = set(get_file(txt_links))
-links_ok = set(get_file(web_archive_ok))
-links_ko = get_file(web_archive_ko)
+links_ok = set(l for l in get_file(web_archive_ok) if l in links)
+links_ko = [l for l in get_file(web_archive_ko) if l.startswith(l+" ")]
 l = len(links)
 l_ok = len(links_ok)
 l_ko = len(links_ko)
