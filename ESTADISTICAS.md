@@ -1,10 +1,10 @@
-Enlaces totales: 42666
+Enlaces totales: 42686
 
 # [Web Archive](https://web.archive.org)
 
 
 * **OK**: 27197 (64 %)
-* **KO**: 5111 (12 %)
+* **KO**: 5377 (13 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `25 %`
@@ -54,7 +54,6 @@ Enlaces totales: 42666
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
     * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `0 %`
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `0.03 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)

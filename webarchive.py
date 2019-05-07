@@ -38,6 +38,7 @@ done = set(ok_list+ko_list)
 
 links = [l for l in get_file(txt_links) if l not in done]
 
+
 f_ok = open(web_archive_ok, "a+")
 f_ko = open(web_archive_ko, "a+")
 
@@ -69,12 +70,12 @@ for l in ko_list:
 total = len(links)
 
 
-for l in reversed(links):
+for l in links:
     total = total - 1
     if l not in done:
         dom = urlparse(l).netloc
         ok, ko = count_dom.get(dom, (0, 0))
-        if ok == 0 and ko > 10:
+        if ok == 0 and ko > 50:
             continue
         print("%d %s" % (total, l))
         try:
