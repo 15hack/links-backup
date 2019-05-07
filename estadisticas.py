@@ -101,7 +101,7 @@ for dom in sorted(doms, key=sort_dom):
     write(("    "* l_level) + "* [{0}](https://web.archive.org/web/*/https://{1}/*)", s_dom, dom, end="")
     if l_ok<l:
         v = l_ok*100/l
-        por = "{0:.2f}" if v > 0 and v < 1 else "{0:.0f}"
+        por = "{0:.2f}" if (v > 0 and v < 1) or (v>99.5 and v<100) else "{0:.0f}"
         por = por.format(v)
         write(" `{0} %`", por)
         err = errores.get(dom, None) or []

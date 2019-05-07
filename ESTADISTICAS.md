@@ -73,7 +73,7 @@ Enlaces totales: 42666
     * [alcosanse](https://web.archive.org/web/*/https://alcosanse.tomalosbarrios.net/*)
     * [aluche](https://web.archive.org/web/*/https://aluche.tomalosbarrios.net/*) `99 %`
     * [aravaca](https://web.archive.org/web/*/https://aravaca.tomalosbarrios.net/*)
-    * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*) `100 %`
+    * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*) `99.63 %`
     * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `0 %`
     * [asamblea-sanlorenzo-escorial](https://web.archive.org/web/*/https://asamblea-sanlorenzo-escorial.tomalosbarrios.net/*)
     * [asambleademostoles](https://web.archive.org/web/*/https://asambleademostoles.tomalosbarrios.net/*) `2 %`
@@ -96,7 +96,7 @@ Enlaces totales: 42666
     * [colladomediano](https://web.archive.org/web/*/https://colladomediano.tomalosbarrios.net/*)
     * [colladovillalba](https://web.archive.org/web/*/https://colladovillalba.tomalosbarrios.net/*) `0 %`
     * [colmenarejo](https://web.archive.org/web/*/https://colmenarejo.tomalosbarrios.net/*)
-    * [colmenarviejo](https://web.archive.org/web/*/https://colmenarviejo.tomalosbarrios.net/*) `100 %`
+    * [colmenarviejo](https://web.archive.org/web/*/https://colmenarviejo.tomalosbarrios.net/*) `99.58 %`
     * [coslada](https://web.archive.org/web/*/https://coslada.tomalosbarrios.net/*) `98 %`
     * [daganzodearriba](https://web.archive.org/web/*/https://daganzodearriba.tomalosbarrios.net/*)
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
@@ -113,7 +113,7 @@ Enlaces totales: 42666
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*)
     * [guadalixdelasierra](https://web.archive.org/web/*/https://guadalixdelasierra.tomalosbarrios.net/*)
     * [guadarrama](https://web.archive.org/web/*/https://guadarrama.tomalosbarrios.net/*) `0 %`
-    * [guindalera](https://web.archive.org/web/*/https://guindalera.tomalosbarrios.net/*) `100 %`
+    * [guindalera](https://web.archive.org/web/*/https://guindalera.tomalosbarrios.net/*) `99.51 %`
     * [hortaleza](https://web.archive.org/web/*/https://hortaleza.tomalosbarrios.net/*) `0 %`
     * [hoyodemanzanares](https://web.archive.org/web/*/https://hoyodemanzanares.tomalosbarrios.net/*)
     * [laconce](https://web.archive.org/web/*/https://laconce.tomalosbarrios.net/*)
@@ -130,7 +130,7 @@ Enlaces totales: 42666
     * [majadahonda](https://web.archive.org/web/*/https://majadahonda.tomalosbarrios.net/*)
     * [mejoradadelcampo](https://web.archive.org/web/*/https://mejoradadelcampo.tomalosbarrios.net/*) `0 %`
     * [miraflores](https://web.archive.org/web/*/https://miraflores.tomalosbarrios.net/*)
-    * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*) `100 %`
+    * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*) `99.82 %`
     * [moralzarzal](https://web.archive.org/web/*/https://moralzarzal.tomalosbarrios.net/*)
     * [navalafuente](https://web.archive.org/web/*/https://navalafuente.tomalosbarrios.net/*) `0 %`
     * [nudomanoteras](https://web.archive.org/web/*/https://nudomanoteras.tomalosbarrios.net/*)
@@ -146,9 +146,9 @@ Enlaces totales: 42666
     * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*) `93 %`
     * [pozuelo](https://web.archive.org/web/*/https://pozuelo.tomalosbarrios.net/*)
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*) `98 %`
-    * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*) `100 %`
+    * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*) `99.53 %`
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `0 %`
-    * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `100 %`
+    * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.94 %`
     * [sanblas](https://web.archive.org/web/*/https://sanblas.tomalosbarrios.net/*) `0 %`
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
@@ -169,7 +169,7 @@ Enlaces totales: 42666
     * [velilla](https://web.archive.org/web/*/https://velilla.tomalosbarrios.net/*) `0 %`
     * [vicalvaro](https://web.archive.org/web/*/https://vicalvaro.tomalosbarrios.net/*)
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
-    * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `100 %`
+    * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `99.93 %`
     * [zarzalejo](https://web.archive.org/web/*/https://zarzalejo.tomalosbarrios.net/*)
-* [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*) `100 %`
+* [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*) `99.85 %`
 * [www.tomalatele.tv](https://web.archive.org/web/*/https://www.tomalatele.tv/*)
