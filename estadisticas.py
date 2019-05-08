@@ -9,6 +9,7 @@ web_archive_ko = "data/webarchive_ko.txt"
 txt_links = "data/links.txt"
 
 re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
+re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?$")
 re_date = re.compile(r",\s*'Date':\s*'.*?'")
 re_sp = re.compile(r"\s+")
 
@@ -76,6 +77,7 @@ errores={}
 for lnk, e in links_ko.items():
     dom = urlparse(lnk).netloc
     e = re_http.sub(" ", e)
+    e = re_http2.sub("", e)
     e = re_date.sub(" ", e)
     e = re_sp.sub(" ", e).strip()
     lst = errores.get(dom, None)

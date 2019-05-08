@@ -4,7 +4,7 @@ Enlaces totales: 42686
 
 
 * **OK**: 27197 (64 %)
-* **KO**: 5377 (13 %)
+* **KO**: 5854 (14 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `25 %`
@@ -56,6 +56,9 @@ Enlaces totales: 42686
     * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `0 %`
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `0.03 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: org.apache.http.conn.ConnectTimeoutException: Connect to madrid.tomalaplaza.net:443 [madrid.tomalaplaza.net/176.9.151.120] failed: Read timed out
+        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: org.archive.wayback.exception.LiveDocumentNotAvailableException live document unavailable: Status 500
+        * WaybackRuntimeError {'status_code': 503, 'headers': {'ETag': '"5b4e77d3-834f"', 'X-ts': '----' , 'X-App-Server': 'wwwsry-sf', 'Content-Type': 'text/html', 'Server': 'nginx/1.15.8', 'Connection': 'keep-alive', 'Content-Length': '33615'}}
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
     * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
