@@ -9,7 +9,7 @@ web_archive_ko = "data/webarchive_ko.txt"
 txt_links = "data/links.txt"
 
 re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
-re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?$")
+re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?/?$")
 re_date = re.compile(r",\s*'Date':\s*'.*?'")
 re_sp = re.compile(r"\s+")
 
