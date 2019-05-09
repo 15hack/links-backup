@@ -12,6 +12,7 @@ re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
 re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?/?$")
 re_date = re.compile(r",\s*'Date':\s*'.*?'")
 re_sp = re.compile(r"\s+")
+re_rtrim = re.compile(r"^\s*\n")
 
 def get_file(name):
     lines = []
@@ -33,6 +34,8 @@ def write(s, *args, end="\n"):
         if len(last_line)>0:
             s = "\n" + s
         s = s + "\n"
+    if len(last_line)==0:
+        s = re_rtrim.sub("", s)
     last_line = s.split("\n")[-1]
     out.write(s+end)
 

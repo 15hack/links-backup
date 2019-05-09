@@ -2,8 +2,7 @@ Enlaces totales: 42686
 
 # [Web Archive](https://web.archive.org)
 
-
-* **OK**: 27205 (64 %)
+* **OK**: 27211 (64 %)
 * **KO**: 14000 (33 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -204,7 +203,7 @@ Enlaces totales: 42686
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*) `99 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
-    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `0 %`
+    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `2 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*)
