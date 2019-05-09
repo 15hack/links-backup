@@ -4,7 +4,7 @@ Enlaces totales: 42686
 
 
 * **OK**: 27205 (64 %)
-* **KO**: 13783 (32 %)
+* **KO**: 14000 (33 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `31 %`
