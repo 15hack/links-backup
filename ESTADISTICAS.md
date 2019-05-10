@@ -2,8 +2,8 @@ Enlaces totales: 42686
 
 # [Web Archive](https://web.archive.org)
 
-* **OK**: 27211 (64 %)
-* **KO**: 14000 (33 %)
+* **OK**: 27212 (64 %)
+* **KO**: 13999 (33 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `31 %`
@@ -183,8 +183,7 @@ Enlaces totales: 42686
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*)
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*)
-    * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*) `99.74 %`
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
+    * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*)
     * [pozuelo](https://web.archive.org/web/*/https://pozuelo.tomalosbarrios.net/*)
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*)
     * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*)
