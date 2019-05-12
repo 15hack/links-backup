@@ -73,7 +73,7 @@ for l in ko_list:
 total = len(links)
 
 
-for l in sorted(links):
+for l in links:
     total = total - 1
     if l not in done:
         dom = urlparse(l).netloc
