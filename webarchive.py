@@ -1,5 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import os
+import re
 import signal
 import sys
 from urllib.parse import urlparse
@@ -16,27 +17,29 @@ web_archive_ko = "data/webarchive_ko.txt"
 txt_links = "data/links.txt"
 
 
-def get_file(name, field=None):
-    lines = []
+def reader(name):
     if os.path.isfile(name):
         with open(name, "r") as f:
             for l in f.readlines():
                 l = l.strip()
                 if l and not l.startswith("#"):
-                    if field is not None:
-                        l = l.split()
-                        lines.append(l[field])
-                    else:
-                        lines.append(l)
-    return lines
+                    yield l
 
 
-ok_list = get_file(web_archive_ok, field=0)
-ko_list = get_file(web_archive_ko, field=0)
+def get_links(name):
+    for l in reader(name):
+        l = l.split()[0]
+        if l.startswith("http"):
+            l = l.split("://", 1)[-1]
+        yield l
 
-done = set(ok_list+ko_list)
 
-links = [l for l in get_file(txt_links) if l not in done]
+ok_list = list(get_links(web_archive_ok))
+ko_list = list(get_links(web_archive_ko))
+
+done = set(ok_list)  # +ko_list)
+
+links = [l for l in reader(txt_links) if l.split("://", 1)[-1] not in done]
 
 
 f_ok = open(web_archive_ok, "a+")
@@ -70,7 +73,7 @@ for l in ko_list:
 total = len(links)
 
 
-for l in links:
+for l in sorted(links):
     total = total - 1
     if l not in done:
         dom = urlparse(l).netloc
@@ -86,7 +89,18 @@ for l in links:
             _, archive_url = str(e).rsplit(None, 1)
             print(">", end=" ")
             save(l, archive_url)
+        # except savepagenow.api.WaybackRuntimeError as e:
         except Exception as e:
+            if len(e.args) == 1 and isinstance(e.args[0], dict):
+                r = e.args[0]
+                txt = r.get("headers", {}).get("Link", None)
+                if txt and r.get("status_code", None) == 200:
+                    m = re.search(
+                        "("+re.escape("https://web.archive.org/web") + r"/\d+/" + re.escape(l)+")", txt)
+                    if m:
+                        print(">", end=" ")
+                        save(l, m.group(1))
+                        continue
             txt = "%s %s\n" % (type(e).__name__, e)
             f_ko.write(l+" "+txt)
             print(txt)
