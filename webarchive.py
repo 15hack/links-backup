@@ -9,30 +9,10 @@ import requests
 import savepagenow
 import urllib3
 
+from util import *
+
 urllib3.disable_warnings()
 requests.packages.urllib3.disable_warnings()
-
-web_archive_ok = "data/webarchive_ok.txt"
-web_archive_ko = "data/webarchive_ko.txt"
-txt_links = "data/links.txt"
-
-
-def reader(name):
-    if os.path.isfile(name):
-        with open(name, "r") as f:
-            for l in f.readlines():
-                l = l.strip()
-                if l and not l.startswith("#"):
-                    yield l
-
-
-def get_links(name):
-    for l in reader(name):
-        l = l.split()[0]
-        if l.startswith("http"):
-            l = l.split("://", 1)[-1]
-        yield l
-
 
 ok_list = list(get_links(web_archive_ok))
 ko_list = list(get_links(web_archive_ko))
@@ -82,7 +62,7 @@ for l in links:
             continue
         print("%d %s" % (total, l))
         try:
-            archive_url = savepagenow.capture(l)
+            archive_url, _ = savepagenow.capture_or_cache(l)
             save(l, archive_url)
             ok = ok + 1
         except savepagenow.api.CachedPage as e:
@@ -96,7 +76,7 @@ for l in links:
                 txt = r.get("headers", {}).get("Link", None)
                 if txt and r.get("status_code", None) == 200:
                     m = re.search(
-                        "("+re.escape("https://web.archive.org/web") + r"/\d+/" + re.escape(l)+")", txt)
+                        "("+re.escape("https://web.archive.org/web") + r"/\d+/", txt)# + re.escape(l)+")", txt)
                     if m:
                         print(">", end=" ")
                         save(l, m.group(1))

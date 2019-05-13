@@ -3,9 +3,7 @@ import os
 import re
 from urllib.parse import urlparse
 
-web_archive_ok = "data/webarchive_ok.txt"
-web_archive_ko = "data/webarchive_ko.txt"
-txt_links = "data/links.txt"
+from util import *
 
 re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
 re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?/?$")
@@ -72,11 +70,12 @@ def add(s, lst):
     return lst
 
 
-links = set(get_file(txt_links))
-links_ok = set(l for l in get_file(web_archive_ok) if l in links)
+links = set(get_links(txt_links))
+links_ok = set(l for l in get_links(web_archive_ok) if l in links)
 links_ko = {}
-for l in get_file(web_archive_ko):
+for l in reader(web_archive_ko):
     l, e = l.split(None, 1)
+    l = l.split("://", 1)[-1]
     if l in links and l not in links_ok:
         links_ko[l] = e
 l = len(links)
