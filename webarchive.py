@@ -79,7 +79,7 @@ for l in links:
                     #     "("+re.escape("https://web.archive.org/web") + r"/\d+/", txt)# + re.escape(l)+")", txt)
                     # if m:
                     print(">", end=" ")
-                    save(l, m.group(1))
+                    save(l, "")
                     continue
             txt = "%s %s\n" % (type(e).__name__, e)
             f_ko.write(l+" "+txt)
