@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 import re
-from urllib.parse import urlparse
+from urllib.parse import urlparse as _urlparse
 
 from util import *
 
@@ -11,6 +11,7 @@ re_date = re.compile(r",\s*'Date':\s*'.*?'")
 re_sp = re.compile(r"\s+")
 re_rtrim = re.compile(r"^\s*\n")
 
+urlparse = lambda x: _urlparse(x if x.startswith("http") else "https://"+x)
 
 def get_file(name):
     lines = []
@@ -71,7 +72,8 @@ def add(s, lst):
 
 
 links = set(get_links(txt_links))
-links_ok = set(l for l in get_links(web_archive_ok) if l in links)
+links_ok = set(l.split("://", 1)[-1] for l in get_links(web_archive_ok) if l in links)
+
 links_ko = {}
 for l in reader(web_archive_ko):
     l, e = l.split(None, 1)

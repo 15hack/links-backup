@@ -75,12 +75,12 @@ for l in links:
                 r = e.args[0]
                 txt = r.get("headers", {}).get("Link", None)
                 if txt and r.get("status_code", None) == 200:
-                    m = re.search(
-                        "("+re.escape("https://web.archive.org/web") + r"/\d+/", txt)# + re.escape(l)+")", txt)
-                    if m:
-                        print(">", end=" ")
-                        save(l, m.group(1))
-                        continue
+                    # m = re.search(
+                    #     "("+re.escape("https://web.archive.org/web") + r"/\d+/", txt)# + re.escape(l)+")", txt)
+                    # if m:
+                    print(">", end=" ")
+                    save(l, m.group(1))
+                    continue
             txt = "%s %s\n" % (type(e).__name__, e)
             f_ko.write(l+" "+txt)
             print(txt)
