@@ -53,7 +53,8 @@ def count_dom(*args):
         i = {}
         for l in ls:
             dom = urlparse(l).netloc
-            i[dom] = i.get(dom, 0) + 1
+            if dom:
+                i[dom] = i.get(dom, 0) + 1
         r.append(i)
     return tuple(r)
 
@@ -103,7 +104,7 @@ write('''
 * **KO**: {1} ({3:.0f} %)
 ''', l_ok, l_ko, (l_ok*100/l), (l_ko*100/l))
 
-doms = set([urlparse(l).netloc for l in links])
+doms = set([urlparse(l).netloc for l in links if urlparse(l).netloc])
 level = []
 for dom in sorted(doms, key=sort_dom):
     while len(level) > 0 and not dom.endswith(level[-1]):

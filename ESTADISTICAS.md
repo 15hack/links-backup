@@ -1,11 +1,11 @@
-Enlaces totales: 60792
+Enlaces totales: 61594
 
 # [Web Archive](https://web.archive.org)
 
-* **OK**: 42856 (70 %)
-* **KO**: 4936 (8 %)
+* **OK**: 43619 (71 %)
+* **KO**: 1704 (3 %)
 
-* [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*) `99 %`
+* [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `72 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
@@ -72,7 +72,7 @@ Enlaces totales: 60792
     * [talavera](https://web.archive.org/web/*/https://talavera.tomalaplaza.net/*)
     * [teruel](https://web.archive.org/web/*/https://teruel.tomalaplaza.net/*)
     * [toledo](https://web.archive.org/web/*/https://toledo.tomalaplaza.net/*)
-    * [valencia](https://web.archive.org/web/*/https://valencia.tomalaplaza.net/*) `10 %`
+    * [valencia](https://web.archive.org/web/*/https://valencia.tomalaplaza.net/*) `11 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [vegadeltajuna](https://web.archive.org/web/*/https://vegadeltajuna.tomalaplaza.net/*)
     * [vigo](https://web.archive.org/web/*/https://vigo.tomalaplaza.net/*)
@@ -122,7 +122,7 @@ Enlaces totales: 60792
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*)
     * [elejido](https://web.archive.org/web/*/https://elejido.tomalosbarrios.net/*)
-    * [enbustarviejo](https://web.archive.org/web/*/https://enbustarviejo.tomalosbarrios.net/*) `0.22 %`
+    * [enbustarviejo](https://web.archive.org/web/*/https://enbustarviejo.tomalosbarrios.net/*) `0.23 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `0 %`
@@ -171,7 +171,7 @@ Enlaces totales: 60792
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*)
     * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `4 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
-    * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `0.57 %`
+    * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `0.61 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `2 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
@@ -189,7 +189,8 @@ Enlaces totales: 60792
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
-    * [smvaldeiglesias](https://web.archive.org/web/*/https://smvaldeiglesias.tomalosbarrios.net/*) `55 %`
+    * [sierranorte](https://web.archive.org/web/*/https://sierranorte.tomalosbarrios.net/*)
+    * [smvaldeiglesias](https://web.archive.org/web/*/https://smvaldeiglesias.tomalosbarrios.net/*) `56 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [soto](https://web.archive.org/web/*/https://soto.tomalosbarrios.net/*)
     * [stamariadelaalameda](https://web.archive.org/web/*/https://stamariadelaalameda.tomalosbarrios.net/*)
@@ -213,4 +214,4 @@ Enlaces totales: 60792
     * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*)
     * [zarzalejo](https://web.archive.org/web/*/https://zarzalejo.tomalosbarrios.net/*)
 * [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*)
-* [www.tomalatele.tv](https://web.archive.org/web/*/https://www.tomalatele.tv/*)
+* [www.tomalatele.tv](https://web.archive.org/web/*/https://www.tomalatele.tv/*) `99.98 %`
