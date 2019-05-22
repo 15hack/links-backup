@@ -58,8 +58,8 @@ for l in links:
     if l not in done:
         dom = urlparse(l).netloc
         ok, ko = count_dom.get(dom, (0, 0))
-        if ok == 0 and ko > 50:
-            continue
+        # if ok == 0 and ko > 50:
+        #     continue
         print("%d %s" % (total, l))
         try:
             archive_url, _ = savepagenow.capture_or_cache(l)

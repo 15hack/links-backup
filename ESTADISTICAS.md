@@ -2,8 +2,8 @@ Enlaces totales: 61594
 
 # [Web Archive](https://web.archive.org)
 
-* **OK**: 43619 (71 %)
-* **KO**: 1704 (3 %)
+* **OK**: 43639 (71 %)
+* **KO**: 1703 (3 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `72 %`
@@ -11,7 +11,7 @@ Enlaces totales: 61594
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
     * [dec10](https://web.archive.org/web/*/https://dec10.takethesquare.net/*) `95 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
-    * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `51 %`
+    * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `58 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `2 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable: java.net.SocketTimeoutException: Read timed out
