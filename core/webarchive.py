@@ -213,7 +213,7 @@ class BulkWebArchive:
                 '''
                 Enlaces totales: {total}
 
-                **OK**: {ok} ({p_ok:.0f} %)
+                **OK**: {ok} ({p_ok:.0f} %)  
                 **KO**: {ko} ({p_ko:.0f} %)
                 '''
             ),

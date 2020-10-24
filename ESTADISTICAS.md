@@ -1,6 +1,6 @@
 Enlaces totales: 65827
 
-**OK**: 50143 (76 %)
+**OK**: 50143 (76 %)  
 **KO**: 15684 (24 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -438,4 +438,3 @@ Enlaces totales: 65827
 no se debe a un falso positivo si no a que aunque la
 petición devolvió un código 2XX no se pudo verificar que la
 url fuera guardada con éxito.
-
