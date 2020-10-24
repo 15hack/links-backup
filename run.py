@@ -26,4 +26,5 @@ while loop!=0:
         wa.run()
     print("\n=== ESTADISTICAS.md ===\n")
     wa.log("ESTADISTICAS.md")
-    move(wa.f.ko, "ko.txt")
+    if loop!=0:
+        move(wa.f.ko, "ko.txt")

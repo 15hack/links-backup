@@ -1,6 +1,7 @@
 import re
 from bunch import Bunch
 
+import requests
 import os
 from urllib.request import urlretrieve
 import random
@@ -43,6 +44,23 @@ class WebArchive:
                     return alt_r
         return r
 
+    def get_visited(self, *doms):
+        status = {}
+        for dom in doms:
+            url = "".join([
+                "http://web.archive.org/cdx/search/cdx?url=",
+                dom,
+                "/*&output=json&fl=original,statuscode&collapse=urlkey"
+            ])
+            r = requests.get(url)
+            r = r.json()
+            for url, code in r[1:]:
+                if isinstance(code, str) and code.isdigit():
+                    code = int(code)
+                if code not in status:
+                    status[code]=set()
+                status[code].add(url)
+        return status
 
     def _save(self, l):
         try:
@@ -144,9 +162,9 @@ class BulkWebArchive:
         if not os.path.isfile(self.f.links) and links:
             print(links, "->", self.f.links, end="\n\n")
             urlretrieve(links, self.f.links)
-        self.reload()
+        self.reload(hard_load=True)
 
-    def reload(self):
+    def reload(self, hard_load=False):
         self.links = set(i for i in get_trunc_links(self.f.links) if get_dom(i))
         self.ok = set(i for i in get_trunc_links(self.f.ok) if i in self.links)
         self.ko = set(i for i in get_trunc_links(self.f.ko) if i in self.links and i not in self.ok)
@@ -156,6 +174,22 @@ class BulkWebArchive:
             a = getattr(self, k)
             a = sorted(a, key=lambda x: (sort_dom(get_dom(x)), trunc_link(x)))
             setattr(self, k, a)
+        if hard_load:
+            queue = self.queue + self.ko
+            doms = set(get_dom(x) for x in queue)
+            queue = set(trunc_link(l).rstrip("/") for l in queue)
+            done = self.wa.get_visited(*doms)
+            done = done.get(200, [])
+            for url in done:
+                p = trunc_link(url).rstrip("/")
+                if p in queue:
+                    self.write(self.f.ok, url)
+            ok = set(reader(self.f.ok))
+            ok = sorted(ok, key=lambda x: (sort_dom(get_dom(x)), trunc_link(x)))
+            with open(self.f.ok, "w") as f:
+                for l in ok:
+                    f.write(l+"\n")
+            self.reload()
 
     def write(self, file, line):
         with open(file, "a") as f:
@@ -208,8 +242,8 @@ class BulkWebArchive:
                 '''
                 Enlaces totales: {total}
 
-                **OK**: {ok} ({p_ok:.0f} %)  
-                **KO**: {ko} ({p_ko:.0f} %)
+                * **OK**: {ok} ({p_ok:.0f} %)
+                * **KO**: {ko} ({p_ko:.0f} %)
                 '''
             ),
             total=total,
