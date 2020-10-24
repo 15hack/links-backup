@@ -35,9 +35,17 @@ def get_dom(x):
         x = "https://" + x
     return urlparse(x).netloc
 
-def sort_dom(dom):
+def keydom(dom):
     k = reversed(dom.split("."))
     return tuple(k)
+
+def keylink(l):
+    arr=[
+        keydom(get_dom(l)),
+        trunc_link(l),
+        l
+    ]
+    return tuple(arr)
 
 def count_dom(*args):
     r = []

@@ -50,12 +50,16 @@ class WebArchive:
             url = "".join([
                 "http://web.archive.org/cdx/search/cdx?url=",
                 dom,
-                "/*&output=json&fl=original,statuscode&collapse=urlkey"
+                "/*&output=json&fl=original,statuscode"
             ])
             r = requests.get(url)
             r = r.json()
             for url, code in r[1:]:
-                if isinstance(code, str) and code.isdigit():
+                if code == "-":
+                    code = -1
+                elif code == "":
+                    code = -2
+                elif isinstance(code, str) and code.isdigit():
                     code = int(code)
                 if code not in status:
                     status[code]=set()
@@ -162,7 +166,26 @@ class BulkWebArchive:
         if not os.path.isfile(self.f.links) and links:
             print(links, "->", self.f.links, end="\n\n")
             urlretrieve(links, self.f.links)
-        self.reload(hard_load=True)
+        self.reload()
+
+    def chek_ok(self):
+        ok = set(reader(self.f.ok))
+        ok = sorted(ok, key=keylink)
+        st = self.wa.get_visited(*set(get_dom(x) for x in ok))
+        for k, v in list(st.items()):
+            st[k]=set(trunc_link(i) for i in v)
+        ks = tuple(sorted((k for k in st.keys() if k!=200), key=lambda x:str(x)))
+        dn = st.get(200, [])
+        fail = []
+        for i in ok:
+            _i = trunc_link(i)
+            if _i not in dn:
+                cds = []
+                for k in ks:
+                    if _i in st[k]:
+                        cds.append(k)
+                print(*cds, end=" ")
+                print(i)
 
     def reload(self, hard_load=False):
         self.links = set(i for i in get_trunc_links(self.f.links) if get_dom(i))
@@ -172,7 +195,7 @@ class BulkWebArchive:
         self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done)
         for k in "links ok ko queue".split():
             a = getattr(self, k)
-            a = sorted(a, key=lambda x: (sort_dom(get_dom(x)), trunc_link(x)))
+            a = sorted(a, key=keylink)
             setattr(self, k, a)
         if hard_load:
             queue = set(trunc_link(l) for l in self.queue)
@@ -185,7 +208,7 @@ class BulkWebArchive:
                 if p in queue:
                     self.write(self.f.ok, url)
             ok = set(reader(self.f.ok))
-            ok = sorted(ok, key=lambda x: (sort_dom(get_dom(x)), trunc_link(x)))
+            ok = sorted(ok, key=keylink)
             with open(self.f.ok, "w") as f:
                 for l in ok:
                     f.write(l+"\n")
@@ -253,7 +276,7 @@ class BulkWebArchive:
             p_ko=(l_ko*100/total)
         )
 
-        doms = sorted(set(get_dom(l) for l in self.links), key=sort_dom)
+        doms = sorted(set(get_dom(l) for l in self.links), key=keydom)
         level = []
         for dom in doms:
             while len(level) > 0 and not dom.endswith(level[-1]):
@@ -277,7 +300,7 @@ class BulkWebArchive:
             else:
                 f.write("")
             level.append(dom)
-        f.write("\n\n"+dedent('''
+        f.write(dedent('''
             **OJO**: cuando un código 2XX es contabilizado como error
             no se debe a un falso positivo si no a que aunque la
             petición devolvió un código 2XX no se pudo verificar que la
