@@ -119,6 +119,13 @@ class WebArchive:
                     desc = desc.replace("org.archive.wayback.exception.LiveDocumentNotAvailableException", "")
                     k = "live document unavailable:"
                     desc = desc.replace(k, "").strip()
+                    desc = re_sp.sub(" ", desc).strip()
+                    for k in ("live document unavailable", "org.archive.wayback.exception."):
+                        while len(k)>0:
+                            if desc.endswith(" "+k):
+                                desc = desc[:-len(k)].rstrip()
+                                break
+                            k = k[:-1]
                 e = name+" "+desc
                 e = re_sp.sub(" ", e).strip()
         return e

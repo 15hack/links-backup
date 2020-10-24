@@ -15,12 +15,9 @@ Enlaces totales: 65827
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `65 %`
         * Fail HTTP status_code: 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavail
-        * WaybackRuntimeError LiveDocumentNotAvailableException org.archive.wayback.excep
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `23 %`
         * Fail HTTP status_code: 204, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live documen
     * [may12](https://web.archive.org/web/*/https://may12.takethesquare.net/*)
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*) `48 %`
@@ -87,7 +84,6 @@ Enlaces totales: 65827
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException Status 5
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to madrid.tomalaplaza.net:443 [madrid.tomalaplaza.net/176.9.151.120] failed: Read timed out
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to madrid.tomalaplaza.net:443 [madrid.tomalaplaza.net/176.9.151.120] failed: connect timed out
         * WaybackRuntimeError LiveDocumentNotAvailableException org.archive.wayback.exception.LiveDocumentNotAvailableExcep
@@ -101,7 +97,7 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 520
     * [mumble](https://web.archive.org/web/*/https://mumble.tomalaplaza.net/*) `74 %`
         * Fail HTTP status_code: 500
-        * WaybackRuntimeError LiveDocumentNotAvailableException live
+        * WaybackRuntimeError LiveDocumentNotAvailableException
     * [ourense](https://web.archive.org/web/*/https://ourense.tomalaplaza.net/*) `99 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
@@ -223,7 +219,6 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 201, 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException St
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to dosdemayo.tomalosbarrios.net:443 [dosdemayo.tomalosbarrios.net/176.9.151.120] failed: connect timed out
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*) `99 %`
         * Fail HTTP status_code: 520
@@ -232,12 +227,10 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 200, 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException Stat
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailab
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `3 %`
         * Fail HTTP status_code: 404, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to fuenlabrada.tomalosbarrios.net:443 [fuenlabrada.tomalosbarrios.net/176.9.151.120] failed: connect timed out
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*) `99.52 %`
         * Fail HTTP status_code: 520
@@ -249,7 +242,6 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 201, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException St
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to getafe.tomalosbarrios.net:443 [getafe.tomalosbarrios.net/176.9.151.120] failed: connect
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*) `99 %`
         * ConnectionError Max retries exceeded
@@ -262,7 +254,6 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 204, 503, 520
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailabl
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to hortaleza.tomalosbarrios.net:443 [hortaleza.tomalosbarrios.net/176.9.151.120] failed: connect timed out
     * [hoyodemanzanares](https://web.archive.org/web/*/https://hoyodemanzanares.tomalosbarrios.net/*)
     * [laconce](https://web.archive.org/web/*/https://laconce.tomalosbarrios.net/*) `99 %`
@@ -280,7 +271,6 @@ Enlaces totales: 65827
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException Stat
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document una
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*) `98 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
@@ -289,14 +279,12 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 200, 503, 520
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to lavapies.tomalosbarrios.net:443 [lavapies.tomalosbarrios.ne
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `10 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 204, 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException St
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to leganes.tomalosbarrios.net:443 [leganes.tomalosbarrios.net/176.9.151.120] failed: Read timed out
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*) `99 %`
         * ConnectionError Max retries exceeded
@@ -306,7 +294,6 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 404, 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException Status 5
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live do
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `42 %`
         * ConnectionError ('Connection aborted.', OSError("(113, 'EHOSTUNREACH')",))
         * ConnectionError Max retries exceeded
@@ -314,7 +301,6 @@ Enlaces totales: 65827
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException Status 5
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live docu
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to madrid.tomalosbarrios.net:443 [madrid.tomalosbarrios.net/176.9.151.120] failed: connect timed out
     * [madridsur](https://web.archive.org/web/*/https://madridsur.tomalosbarrios.net/*) `98 %`
         * ConnectionError Max retries exceeded
@@ -342,7 +328,6 @@ Enlaces totales: 65827
     * [nuevobaztan](https://web.archive.org/web/*/https://nuevobaztan.tomalosbarrios.net/*)
     * [paracuellos](https://web.archive.org/web/*/https://paracuellos.tomalosbarrios.net/*) `9 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavai
     * [parla](https://web.archive.org/web/*/https://parla.tomalosbarrios.net/*) `97 %`
         * ConnectionError Max retries exceeded
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*) `92 %`
@@ -352,19 +337,16 @@ Enlaces totales: 65827
         * Fail HTTP status_code: 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException St
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavailable
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to paseoextremadura.tomalosbarrios.net:443 [paseoextremadura.tomalosbarrios.net/176.9.151.120] failed: Read
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to paseoextremadura.tomalosbarrios.net:443 [paseoextremadura.tomalosbarrios.net/176.9.151.120] failed: connect timed out
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `10 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document una
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to pedrezuela.tomalosbarrios.net:443 [pedrezuela.tomalosbarrios.net/176.9.151.1
     * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `8 %`
         * Fail HTTP status_code: 204, 500, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException liv
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*) `97 %`
         * TooManyRedirects Exceeded 30 redirects.
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*) `98 %`
@@ -380,7 +362,6 @@ Enlaces totales: 65827
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `19 %`
         * Fail HTTP status_code: 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to retiro.tomalosbarrios.net:443 [retiro.tomalosbarrios.net/176.9.151.120] failed: connect timed ou
     * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.78 %`
         * Fail HTTP status_code: 520
@@ -412,7 +393,6 @@ Enlaces totales: 65827
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 204, 500, 503, 520
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
-        * WaybackRuntimeError LiveDocumentNotAvailableException live document unavail
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to torrelaguna.tomalosbarrios.net:443 [torrel
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*) `98 %`
