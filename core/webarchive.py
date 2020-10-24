@@ -8,63 +8,12 @@ from textwrap import dedent
 import savepagenow
 from .writer import MDWriter
 from urllib.parse import urlparse
+from .util import *
 
-def reader(name):
-    if os.path.isfile(name):
-        with open(name, "r") as f:
-            for l in f.readlines():
-                l = l.strip()
-                if l and not l.startswith("#"):
-                    yield l
-
-def trunc_link(l):
-    slp = l.split("://", 1)
-    if len(slp)==2 and slp[0].lower() in ("http", "https"):
-        l = slp[1]
-    return l
-
-def get_trunc_links(name):
-    for l in reader(name):
-        l = l.split()[0]
-        yield trunc_link(l)
-
-def get_dom(x):
-    if not x.startswith("http"):
-        x = "https://" + x
-    return urlparse(x).netloc
-
-def sort_dom(dom):
-    k = reversed(dom.split("."))
-    return tuple(k)
-
-def count_dom(*args):
-    r = []
-    for ls in args:
-        i = {}
-        for l in ls:
-            dom = get_dom(l)
-            if dom:
-                i[dom] = i.get(dom, 0) + 1
-        r.append(i)
-    return tuple(r)
-
-def add(s, lst):
-    if lst is None:
-        lst = []
-    for i, v in enumerate(lst):
-        if v == s or v.startswith(s):
-            return lst
-        if s.startswith(v):
-            lst[i] = s
-            return lst
-    lst.append(s)
-    return lst
-
-def renum(arr):
-    count = len(arr)
-    for i in arr:
-        count = count - 1
-        yield count, i
+re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
+re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?/?$")
+re_date = re.compile(r",\s*'Date':\s*'.*?'")
+re_sp = re.compile(r"\s+")
 
 class WebArchive:
     def __init__(self, tryhard=False):
@@ -136,6 +85,45 @@ class WebArchive:
             )
             return out
 
+    def parse_error(self, e):
+        js = None
+        if isinstance(e, dict):
+            js = e
+        elif isinstance(e, Exception):
+            if len(e.args) == 1 and isinstance(e.args[0], dict):
+                js = e.args[0]
+            e = "%s %s" % (type(e).__name__, e)
+        if js is None and isinstance(e, str):
+            pr = str(e).strip()
+            if not pr.startswith("{") and " " in pr:
+                pr = pr.split(None, 1)[1]
+            js = safe_json(pr)
+        if js and "status_code" in js:
+            return js["status_code"]
+        if isinstance(e, str) and " " in e.strip():
+            name, desc = e.strip().split(None, 1)
+            if name == "ConnectionError" and "Max retries exceeded" in desc:
+                return "ConnectionError Max retries exceeded"
+            if name == "WaybackRuntimeError":
+                if "LiveDocumentNotAvailableException" in desc and ": Status 500" in desc:
+                    return 500
+        if isinstance(e, str):
+            e = re_http.sub(" ", e)
+            e = re_http2.sub("", e)
+            e = re_date.sub(" ", e)
+            e = re_sp.sub(" ", e).strip()
+
+            if " " in e.strip():
+                name, desc = e.strip().split(None, 1)
+                if desc.startswith("LiveDocumentNotAvailableException"):
+                    desc = desc.replace("org.archive.wayback.exception.LiveDocumentNotAvailableException", "")
+                    k = "live document unavailable:"
+                    desc = desc.replace(k, "").strip()
+                e = name+" "+desc
+                e = re_sp.sub(" ", e).strip()
+        return e
+
+
 class BulkWebArchive:
     def __init__(self, work_dir, *args, links=None, tryhard=False, **kargv):
         self.wa = WebArchive(tryhard=tryhard)
@@ -191,25 +179,29 @@ class BulkWebArchive:
             if l in self.links and l not in self.ok:
                 links_ko[l] = e
 
-        re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
-        re_http2 = re.compile(r":\s*\bht?t?p?s?:?/?/?$")
-        re_date = re.compile(r",\s*'Date':\s*'.*?'")
-        re_sp = re.compile(r"\s+")
         errores = {}
+        status_codes={}
         for lnk, e in links_ko.items():
             dom = get_dom(lnk)
-            e = re_http.sub(" ", e)
-            e = re_http2.sub("", e)
-            e = re_date.sub(" ", e)
-            e = re_sp.sub(" ", e).strip()
             lst = errores.get(dom, None)
+            err = self.wa.parse_error(e)
+            if isinstance(err, int):
+                if dom not in status_codes:
+                    status_codes[dom]=set()
+                status_codes[dom].add(err)
+            else:
+                errores[dom] = add(err, lst)
+        for dom, st in status_codes.items():
+            lst = errores.get(dom, None)
+            e = "Fail HTTP status_code: %s" % ", ".join(str(i) for i in sorted(st))
             errores[dom] = add(e, lst)
 
         count_total, count_ok = count_dom(self.links, self.ok)
         l_ok = len(self.ok)
         l_ko = len(self.ko)
+        total = len(self.links)
         f = MDWriter(out)
-        f.write(f,
+        f.write(
             dedent(
                 '''
                 Enlaces totales: {total}
@@ -249,4 +241,10 @@ class BulkWebArchive:
             else:
                 f.write("")
             level.append(dom)
+        f.write("\n\n"+dedent('''
+            **OJO**: cuando un código 2XX es contabilizado como error
+            no se debe a un falso positivo si no a que aunque la
+            petición devolvió un código 2XX no se pudo verificar que la
+            url fuera guardada con éxito.
+        '''))
         f.close()

@@ -16,13 +16,14 @@ except:
     pass
 
 while loop!=0:
-    print("\n=== INTENTO %s ===\n" % abs(loop))
     loop = loop-1
     wa = BulkWebArchive("data", links="https://raw.githubusercontent.com/15hack/web-backup/master/out/links.txt")
-    if len(wa.links)==0:
+    if len(wa.queue)==0:
         loop = 0
     else:
+        print("\n=== INTENTO %s ===\n" % abs(loop+1))
         shuffle(wa.queue)
         wa.run()
-        wa.log("ESTADISTICA.md")
-        move(wa.f.ko, "ko.txt")
+    print("\n=== ESTADISTICAS.md ===\n")
+    wa.log("ESTADISTICAS.md")
+    #move(wa.f.ko, "ko.txt")
