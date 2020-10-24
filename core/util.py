@@ -10,6 +10,15 @@ def reader(name):
                 if l and not l.startswith("#"):
                     yield l
 
+def read_tuple(name, size=None):
+    for l in reader(name):
+        if size is None:
+            yield l.split()
+        else:
+            l = l.split(None, size-1)
+            if len(l)==size:
+                yield l
+
 def trunc_link(l):
     slp = l.split("://", 1)
     if len(slp)==2 and slp[0].lower() in ("http", "https"):

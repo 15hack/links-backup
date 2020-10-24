@@ -179,25 +179,20 @@ class BulkWebArchive:
     def log(self, out):
         self.reload()
 
-        links_ko = {}
-        for l in reader(self.f.ko):
-            l, e = l.split(None, 1)
-            l = trunc_link(l)
-            if l in self.links and l not in self.ok:
-                links_ko[l] = e
-
         errores = {}
         status_codes={}
-        for lnk, e in links_ko.items():
-            dom = get_dom(lnk)
-            lst = errores.get(dom, None)
-            err = self.wa.parse_error(e)
-            if isinstance(err, int):
-                if dom not in status_codes:
-                    status_codes[dom]=set()
-                status_codes[dom].add(err)
-            else:
-                errores[dom] = add(err, lst)
+        for lnk, e in read_tuple(self.f.ko, size=2):
+            lnk = trunc_link(lnk)
+            e = self.wa.parse_error(e)
+            if lnk in self.ko and e is not None:
+                dom = get_dom(lnk)
+                lst = errores.get(dom, None)
+                if isinstance(e, int):
+                    if dom not in status_codes:
+                        status_codes[dom]=set()
+                    status_codes[dom].add(e)
+                else:
+                    errores[dom] = add(e, lst)
         for dom, st in status_codes.items():
             lst = errores.get(dom, None)
             e = "Fail HTTP status_code: %s" % ", ".join(str(i) for i in sorted(st))

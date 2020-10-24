@@ -27,6 +27,7 @@ Enlaces totales: 65827
     * ConnectionError Max retries exceeded
     * Fail HTTP status_code: 200
     * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `8 %`
+        * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*) `96 %`
         * ConnectionError Max retries exceeded
@@ -438,3 +439,4 @@ Enlaces totales: 65827
 no se debe a un falso positivo si no a que aunque la
 petición devolvió un código 2XX no se pudo verificar que la
 url fuera guardada con éxito.
+
