@@ -1,7 +1,7 @@
 Enlaces totales: 65827
 
-* **OK**: 55987 (85 %)
-* **KO**: 9840 (15 %)
+* **OK**: 55997 (85 %)
+* **KO**: 9830 (15 %)
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `97 %`
@@ -23,7 +23,7 @@ Enlaces totales: 65827
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*) `99.73 %`
     * ConnectionError Max retries exceeded
-    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `29 %`
+    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `40 %`
         * TooManyRedirects Exceeded 30 redirects.
         * WaybackRuntimeError LiveDocumentNotAvailableException javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*) `96 %`
@@ -69,7 +69,7 @@ Enlaces totales: 65827
         * ConnectionError Max retries exceeded
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
-    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `52 %`
+    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `59 %`
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `72 %`
         * ConnectionError Max retries exceeded
@@ -142,8 +142,7 @@ Enlaces totales: 65827
         * WaybackRuntimeError LiveDocumentNotAvailableException java.net.SocketTimeoutException: Read timed out
         * WaybackRuntimeError LiveDocumentNotAvailableException org.apache.http.conn.ConnectTimeoutException: Connect to asambleademostoles.tomalosbarrios.net:443 [asambleademostoles.tomalosbarr
     * [asambleaplayasalicante](https://web.archive.org/web/*/https://asambleaplayasalicante.tomalosbarrios.net/*)
-    * [austrias](https://web.archive.org/web/*/https://austrias.tomalosbarrios.net/*) `99.83 %`
-        * Fail HTTP status_code: 200
+    * [austrias](https://web.archive.org/web/*/https://austrias.tomalosbarrios.net/*)
     * [barajas](https://web.archive.org/web/*/https://barajas.tomalosbarrios.net/*) `99 %`
         * ConnectionError Max retries exceeded
         * TooManyRedirects Exceeded 30 redirects.
@@ -249,7 +248,7 @@ Enlaces totales: 65827
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*) `98 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
-    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `30 %`
+    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `31 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 200, 503, 520
         * TooManyRedirects Exceeded 30 redirects.

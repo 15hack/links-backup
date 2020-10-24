@@ -175,13 +175,13 @@ class BulkWebArchive:
             a = sorted(a, key=lambda x: (sort_dom(get_dom(x)), trunc_link(x)))
             setattr(self, k, a)
         if hard_load:
-            queue = self.queue + self.ko
+            queue = set(trunc_link(l) for l in self.queue)
+            queue = queue.union(self.ko)
             doms = set(get_dom(x) for x in queue)
-            queue = set(trunc_link(l).rstrip("/") for l in queue)
             done = self.wa.get_visited(*doms)
             done = done.get(200, [])
             for url in done:
-                p = trunc_link(url).rstrip("/")
+                p = trunc_link(url)
                 if p in queue:
                     self.write(self.f.ok, url)
             ok = set(reader(self.f.ok))

@@ -23,7 +23,7 @@ def trunc_link(l):
     slp = l.split("://", 1)
     if len(slp)==2 and slp[0].lower() in ("http", "https"):
         l = slp[1]
-    return l
+    return l.rstrip("/")
 
 def get_trunc_links(name):
     for l in reader(name):
