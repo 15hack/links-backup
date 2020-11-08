@@ -19,10 +19,7 @@ if len(sys.argv)>1:
         wa.chek_ok()
         sys.exit()
     if loop == "reload":
-        move(wa.f.ko, "ko.txt")
         wa.reload(hard_load=True)
-        move("ko.txt", wa.f.ko)
-        wa.reload()
         wa.log("ESTADISTICAS.md")
         sys.exit()
     loop = int(loop)

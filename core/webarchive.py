@@ -189,8 +189,12 @@ class BulkWebArchive:
 
     def reload(self, hard_load=False):
         self.links = set(i for i in get_trunc_links(self.f.links) if get_dom(i))
+        self.ok = set()
         self.ok = set(i for i in get_trunc_links(self.f.ok) if i in self.links)
-        self.ko = set(i for i in get_trunc_links(self.f.ko) if i in self.links and i not in self.ok)
+        if hard_load:
+            self.ko = set()
+        else:
+            self.ko = set(i for i in get_trunc_links(self.f.ko) if i in self.links and i not in self.ok)
         done = self.ok.union(self.ko)
         self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done)
         for k in "links ok ko queue".split():
@@ -267,13 +271,15 @@ class BulkWebArchive:
 
                 * **OK**: {ok} ({p_ok:.0f} %)
                 * **KO**: {ko} ({p_ko:.0f} %)
+                * Falta: {falta}
                 '''
             ),
             total=total,
             ok=l_ok,
             ko=l_ko,
             p_ok=(l_ok*100/total),
-            p_ko=(l_ko*100/total)
+            p_ko=(l_ko*100/total),
+            falta=(total-l_ok-l_ko)
         )
 
         doms = sorted(set(get_dom(l) for l in self.links), key=keydom)
