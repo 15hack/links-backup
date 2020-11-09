@@ -10,7 +10,7 @@ abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
 
-wa = BulkWebArchive("data", links="https://raw.githubusercontent.com/15hack/web-backup/master/out/links.txt")
+wa = BulkWebArchive("data", links="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt")
 
 loop = 1
 if len(sys.argv)>1:
