@@ -10,7 +10,13 @@ abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
 
-wa = BulkWebArchive("data", links="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt")
+wa = BulkWebArchive(
+    "data",
+    links="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt",
+    # Aunque www.tomalatele.tv esta en la lista de enlaces
+    # realmente ya no esta online, asi que lo ignoramos
+    ignore="www.tomalatele.tv"
+)
 
 loop = 1
 if len(sys.argv)>1:

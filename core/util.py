@@ -1,17 +1,19 @@
 import json
 from urllib.parse import urlparse
 import ast
+import os
 
-def reader(name):
-    if os.path.isfile(name):
-        with open(name, "r") as f:
-            for l in f.readlines():
-                l = l.strip()
-                if l and not l.startswith("#"):
-                    yield l
+def reader(*files):
+    for file in files:
+        if os.path.isfile(file):
+            with open(file, "r") as f:
+                for l in f.readlines():
+                    l = l.strip()
+                    if l and not l.startswith("#"):
+                        yield l
 
-def read_tuple(name, size=None):
-    for l in reader(name):
+def read_tuple(*files, size=None):
+    for l in reader(*files):
         if size is None:
             yield l.split()
         else:
@@ -25,8 +27,8 @@ def trunc_link(l):
         l = slp[1]
     return l.rstrip("/")
 
-def get_trunc_links(name):
-    for l in reader(name):
+def get_trunc_links(*files):
+    for l in reader(*files):
         l = l.split()[0]
         yield trunc_link(l)
 
@@ -57,14 +59,6 @@ def count_dom(*args):
                 i[dom] = i.get(dom, 0) + 1
         r.append(i)
     return tuple(r)
-import re
-from bunch import Bunch
-
-import os
-from urllib.request import urlretrieve
-import random
-from textwrap import dedent
-import savepagenow
 
 def add(s, lst):
     if lst is None:

@@ -52,8 +52,12 @@ class WebArchive:
                 dom,
                 "/*&output=json&fl=original,statuscode"
             ])
-            r = requests.get(url)
-            r = r.json()
+            try:
+                r = requests.get(url)
+                r = r.json()
+            except:
+                print(url)
+                continue
             for url, code in r[1:]:
                 if code == "-":
                     code = -1
@@ -154,14 +158,20 @@ class WebArchive:
 
 
 class BulkWebArchive:
-    def __init__(self, work_dir, *args, links=None, tryhard=False, **kargv):
+    def __init__(self, work_dir, *args, ignore=None, links=None, tryhard=False, **kargv):
         self.wa = WebArchive(tryhard=tryhard)
+        if ignore is None:
+            ignore = tuple()
+        elif isinstance(ignore, str):
+            ignore = (ignore, )
+        self.ignore = ignore
         os.makedirs(work_dir, exist_ok=True)
         work_dir = work_dir.rstrip("/")+"/"
         self.f=Bunch(
             links = work_dir+"links.txt",
             ok = work_dir+"ok.txt",
             ko = work_dir+"ko.txt",
+            hard_ko = work_dir+"hard_ko.txt",
         )
         if not os.path.isfile(self.f.links) and links:
             print(links, "->", self.f.links, end="\n\n")
@@ -194,9 +204,9 @@ class BulkWebArchive:
         if hard_load:
             self.ko = set()
         else:
-            self.ko = set(i for i in get_trunc_links(self.f.ko) if i in self.links and i not in self.ok)
+            self.ko = set(i for i in get_trunc_links(self.f.ko, self.f.hard_ko) if i in self.links and i not in self.ok)
         done = self.ok.union(self.ko)
-        self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done)
+        self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done and get_dom(l) not in self.ignore)
         for k in "links ok ko queue".split():
             a = getattr(self, k)
             a = sorted(a, key=keylink)
@@ -205,6 +215,7 @@ class BulkWebArchive:
             queue = set(trunc_link(l) for l in self.queue)
             queue = queue.union(self.ko)
             doms = set(get_dom(x) for x in queue)
+            doms = (d for d in doms if d not in self.ignore)
             done = self.wa.get_visited(*doms)
             done = done.get(200, [])
             for url in done:
@@ -242,7 +253,7 @@ class BulkWebArchive:
 
         errores = {}
         status_codes={}
-        for lnk, e in read_tuple(self.f.ko, size=2):
+        for lnk, e in read_tuple(self.f.ko, self.f.hard_ko, size=2):
             lnk = trunc_link(lnk)
             e = self.wa.parse_error(e)
             if lnk in self.ko and e is not None:
