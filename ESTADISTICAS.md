@@ -1,8 +1,8 @@
-Enlaces totales: 67983
+Enlaces totales: 68903
 
-* **OK**: 61887 (91 %)
-* **KO**: 5866 (9 %)
-* Falta: 230
+* **OK**: 62730 (91 %)
+* **KO**: 5871 (9 %)
+* Falta: 302
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `97 %`
@@ -12,6 +12,7 @@ Enlaces totales: 67983
     * [dec10](https://web.archive.org/web/*/https://dec10.takethesquare.net/*)
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `99 %`
         * Fail HTTP status_code: 520
+    * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*) `91 %`
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `89 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
@@ -19,21 +20,26 @@ Enlaces totales: 67983
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 520
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*)
-    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `80 %`
+    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `81 %`
         * Fail HTTP status_code: 404
         * TooManyRedirects Exceeded 30 redirects.
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*)
     * [actasmadrid](https://web.archive.org/web/*/https://actasmadrid.tomalaplaza.net/*)
     * [alcala](https://web.archive.org/web/*/https://alcala.tomalaplaza.net/*)
     * [alicante](https://web.archive.org/web/*/https://alicante.tomalaplaza.net/*)
+    * [andorra](https://web.archive.org/web/*/https://andorra.tomalaplaza.net/*) `40 %`
+    * [aragon](https://web.archive.org/web/*/https://aragon.tomalaplaza.net/*) `67 %`
+    * [aviles](https://web.archive.org/web/*/https://aviles.tomalaplaza.net/*)
+    * [barcelona](https://web.archive.org/web/*/https://barcelona.tomalaplaza.net/*) `67 %`
     * [benicarlo](https://web.archive.org/web/*/https://benicarlo.tomalaplaza.net/*)
     * [berlinbienal](https://web.archive.org/web/*/https://berlinbienal.tomalaplaza.net/*)
     * [bilbao](https://web.archive.org/web/*/https://bilbao.tomalaplaza.net/*)
-    * [burgos](https://web.archive.org/web/*/https://burgos.tomalaplaza.net/*)
+    * [burgos](https://web.archive.org/web/*/https://burgos.tomalaplaza.net/*) `89 %`
     * [caceres](https://web.archive.org/web/*/https://caceres.tomalaplaza.net/*)
     * [cadiz](https://web.archive.org/web/*/https://cadiz.tomalaplaza.net/*)
     * [castellon](https://web.archive.org/web/*/https://castellon.tomalaplaza.net/*)
     * [chiclana](https://web.archive.org/web/*/https://chiclana.tomalaplaza.net/*)
+    * [compostela](https://web.archive.org/web/*/https://compostela.tomalaplaza.net/*)
     * [comunicacionestatal15m](https://web.archive.org/web/*/https://comunicacionestatal15m.tomalaplaza.net/*)
     * [contralaviolenciadegenero](https://web.archive.org/web/*/https://contralaviolenciadegenero.tomalaplaza.net/*)
     * [cordoba](https://web.archive.org/web/*/https://cordoba.tomalaplaza.net/*)
@@ -50,8 +56,9 @@ Enlaces totales: 67983
     * [jerez](https://web.archive.org/web/*/https://jerez.tomalaplaza.net/*)
     * [laspalmas](https://web.archive.org/web/*/https://laspalmas.tomalaplaza.net/*)
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
+    * [listas](https://web.archive.org/web/*/https://listas.tomalaplaza.net/*) `77 %`
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
-    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `69 %`
+    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `70 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `97 %`
@@ -59,24 +66,29 @@ Enlaces totales: 67983
         * Fail HTTP status_code: 520
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
-    * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
+    * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*) `99 %`
     * [mumble](https://web.archive.org/web/*/https://mumble.tomalaplaza.net/*) `96 %`
         * Fail HTTP status_code: 520
     * [ourense](https://web.archive.org/web/*/https://ourense.tomalaplaza.net/*)
+    * [oviedo](https://web.archive.org/web/*/https://oviedo.tomalaplaza.net/*) `80 %`
     * [pamplona](https://web.archive.org/web/*/https://pamplona.tomalaplaza.net/*)
     * [pontevedra](https://web.archive.org/web/*/https://pontevedra.tomalaplaza.net/*)
     * [ronda](https://web.archive.org/web/*/https://ronda.tomalaplaza.net/*)
-    * [salamanca](https://web.archive.org/web/*/https://salamanca.tomalaplaza.net/*)
+    * [salamanca](https://web.archive.org/web/*/https://salamanca.tomalaplaza.net/*) `67 %`
     * [santiago](https://web.archive.org/web/*/https://santiago.tomalaplaza.net/*)
     * [segovia](https://web.archive.org/web/*/https://segovia.tomalaplaza.net/*)
-    * [sevilla](https://web.archive.org/web/*/https://sevilla.tomalaplaza.net/*)
+    * [sevilla](https://web.archive.org/web/*/https://sevilla.tomalaplaza.net/*) `99.86 %`
     * [soria](https://web.archive.org/web/*/https://soria.tomalaplaza.net/*)
     * [talavera](https://web.archive.org/web/*/https://talavera.tomalaplaza.net/*)
+    * [tcj](https://web.archive.org/web/*/https://tcj.tomalaplaza.net/*) `29 %`
     * [teruel](https://web.archive.org/web/*/https://teruel.tomalaplaza.net/*)
     * [toledo](https://web.archive.org/web/*/https://toledo.tomalaplaza.net/*)
     * [valencia](https://web.archive.org/web/*/https://valencia.tomalaplaza.net/*)
     * [vegadeltajuna](https://web.archive.org/web/*/https://vegadeltajuna.tomalaplaza.net/*)
+    * [vemail](https://web.archive.org/web/*/https://vemail.tomalaplaza.net/*) `67 %`
     * [vigo](https://web.archive.org/web/*/https://vigo.tomalaplaza.net/*)
+    * [wiki](https://web.archive.org/web/*/https://wiki.tomalaplaza.net/*) `99 %`
+        * Fail HTTP status_code: 404, 520
     * [zamora](https://web.archive.org/web/*/https://zamora.tomalaplaza.net/*)
     * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalaplaza.net/*)
 * [tomalosbarrios.net](https://web.archive.org/web/*/https://tomalosbarrios.net/*)
@@ -94,7 +106,7 @@ Enlaces totales: 67983
     * [austrias](https://web.archive.org/web/*/https://austrias.tomalosbarrios.net/*)
     * [barajas](https://web.archive.org/web/*/https://barajas.tomalosbarrios.net/*)
     * [barriodelpilar](https://web.archive.org/web/*/https://barriodelpilar.tomalosbarrios.net/*)
-    * [barriosdelsur](https://web.archive.org/web/*/https://barriosdelsur.tomalosbarrios.net/*)
+    * [barriosdelsur](https://web.archive.org/web/*/https://barriosdelsur.tomalosbarrios.net/*) `92 %`
     * [batan](https://web.archive.org/web/*/https://batan.tomalosbarrios.net/*)
     * [becerril](https://web.archive.org/web/*/https://becerril.tomalosbarrios.net/*)
     * [boadilladelmonte](https://web.archive.org/web/*/https://boadilladelmonte.tomalosbarrios.net/*)
@@ -162,15 +174,17 @@ Enlaces totales: 67983
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*)
+    * [listas](https://web.archive.org/web/*/https://listas.tomalosbarrios.net/*) `97 %`
     * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `51 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
-    * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `91 %`
+    * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `90 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 520
     * [madridsur](https://web.archive.org/web/*/https://madridsur.tomalosbarrios.net/*)
     * [majadahonda](https://web.archive.org/web/*/https://majadahonda.tomalosbarrios.net/*) `99.90 %`
         * Fail HTTP status_code: 520
+    * [mataro](https://web.archive.org/web/*/https://mataro.tomalosbarrios.net/*) `67 %`
     * [mejoradadelcampo](https://web.archive.org/web/*/https://mejoradadelcampo.tomalosbarrios.net/*)
     * [miraflores](https://web.archive.org/web/*/https://miraflores.tomalosbarrios.net/*)
     * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*)
@@ -211,13 +225,14 @@ Enlaces totales: 67983
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
+    * [sevilla](https://web.archive.org/web/*/https://sevilla.tomalosbarrios.net/*) `20 %`
     * [sierranorte](https://web.archive.org/web/*/https://sierranorte.tomalosbarrios.net/*)
     * [smvaldeiglesias](https://web.archive.org/web/*/https://smvaldeiglesias.tomalosbarrios.net/*)
     * [soto](https://web.archive.org/web/*/https://soto.tomalosbarrios.net/*)
     * [stamariadelaalameda](https://web.archive.org/web/*/https://stamariadelaalameda.tomalosbarrios.net/*)
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*)
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
-    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `48 %`
+    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `49 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
@@ -236,6 +251,7 @@ Enlaces totales: 67983
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
     * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `99.88 %`
         * Fail HTTP status_code: 520
+    * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalosbarrios.net/*) `67 %`
     * [zarzalejo](https://web.archive.org/web/*/https://zarzalejo.tomalosbarrios.net/*) `99 %`
         * Fail HTTP status_code: 520
 * [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*)
