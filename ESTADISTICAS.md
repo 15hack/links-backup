@@ -1,8 +1,8 @@
-Enlaces totales: 68916
+Enlaces totales: 68910
 
-* **OK**: 62885 (91 %)
-* **KO**: 5797 (8 %)
-* Falta: 234
+* **OK**: 62895 (91 %)
+* **KO**: 5779 (8 %)
+* Falta: 236
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `97 %`
@@ -61,11 +61,13 @@ Enlaces totales: 68916
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `98 %`
         * Fail HTTP status_code: 520, 523
+    * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*) `0 %`
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
     * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
     * [mumble](https://web.archive.org/web/*/https://mumble.tomalaplaza.net/*) `96 %`
         * Fail HTTP status_code: 520
+    * [ocmdaganzo](https://web.archive.org/web/*/https://ocmdaganzo.tomalaplaza.net/*) `0 %`
     * [optt](https://web.archive.org/web/*/https://optt.tomalaplaza.net/*)
     * [ourense](https://web.archive.org/web/*/https://ourense.tomalaplaza.net/*)
     * [oviedo](https://web.archive.org/web/*/https://oviedo.tomalaplaza.net/*)
@@ -185,7 +187,7 @@ Enlaces totales: 68916
     * [paracuellos](https://web.archive.org/web/*/https://paracuellos.tomalosbarrios.net/*)
     * [parla](https://web.archive.org/web/*/https://parla.tomalosbarrios.net/*)
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*)
-    * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `51 %`
+    * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `52 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `48 %`
@@ -221,7 +223,7 @@ Enlaces totales: 68916
     * [trescantos](https://web.archive.org/web/*/https://trescantos.tomalosbarrios.net/*)
     * [usera](https://web.archive.org/web/*/https://usera.tomalosbarrios.net/*)
     * [valdemorilloynavalagamella](https://web.archive.org/web/*/https://valdemorilloynavalagamella.tomalosbarrios.net/*)
-    * [valdemoro](https://web.archive.org/web/*/https://valdemoro.tomalosbarrios.net/*) `52 %`
+    * [valdemoro](https://web.archive.org/web/*/https://valdemoro.tomalosbarrios.net/*) `57 %`
         * Fail HTTP status_code: 520
     * [vdelacanada](https://web.archive.org/web/*/https://vdelacanada.tomalosbarrios.net/*)
     * [velilla](https://web.archive.org/web/*/https://velilla.tomalosbarrios.net/*) `53 %`
