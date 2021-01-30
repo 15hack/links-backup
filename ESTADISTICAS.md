@@ -1,7 +1,7 @@
 Enlaces totales: 68910
 
-* **OK**: 62898 (91 %)
-* **KO**: 5776 (8 %)
+* **OK**: 62934 (91 %)
+* **KO**: 5740 (8 %)
 * Falta: 236
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -132,7 +132,7 @@ Enlaces totales: 68910
     * [daganzodearriba](https://web.archive.org/web/*/https://daganzodearriba.tomalosbarrios.net/*)
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
     * [debatepopular](https://web.archive.org/web/*/https://debatepopular.tomalosbarrios.net/*)
-    * [dosdemayo](https://web.archive.org/web/*/https://dosdemayo.tomalosbarrios.net/*) `83 %`
+    * [dosdemayo](https://web.archive.org/web/*/https://dosdemayo.tomalosbarrios.net/*) `86 %`
         * Fail HTTP status_code: 520
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*)
     * [elejido](https://web.archive.org/web/*/https://elejido.tomalosbarrios.net/*)
