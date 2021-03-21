@@ -1,8 +1,8 @@
 Enlaces totales: 68910
 
-* **OK**: 62934 (91 %)
-* **KO**: 5740 (8 %)
-* Falta: 236
+* **OK**: 62961 (91 %)
+* **KO**: 5714 (8 %)
+* Falta: 235
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `97 %`
@@ -18,7 +18,7 @@ Enlaces totales: 68910
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 520
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*)
-    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `87 %`
+    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `93 %`
         * Fail HTTP status_code: 404
         * TooManyRedirects Exceeded 30 redirects.
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*)
@@ -61,7 +61,7 @@ Enlaces totales: 68910
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `98 %`
         * Fail HTTP status_code: 520, 523
-    * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*) `0 %`
+    * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*)
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
     * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
@@ -93,7 +93,7 @@ Enlaces totales: 68910
         * Fail HTTP status_code: 523
     * [vigo](https://web.archive.org/web/*/https://vigo.tomalaplaza.net/*)
     * [wiki](https://web.archive.org/web/*/https://wiki.tomalaplaza.net/*) `99 %`
-        * Fail HTTP status_code: 520, 523
+        * Fail HTTP status_code: 520
     * [zamora](https://web.archive.org/web/*/https://zamora.tomalaplaza.net/*)
     * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalaplaza.net/*)
 * [tomalosbarrios.net](https://web.archive.org/web/*/https://tomalosbarrios.net/*)
@@ -141,7 +141,7 @@ Enlaces totales: 68910
     * [foro](https://web.archive.org/web/*/https://foro.tomalosbarrios.net/*) `99.62 %`
         * Fail HTTP status_code: 523
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
-    * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `52 %`
+    * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `53 %`
         * Fail HTTP status_code: 520, 523
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*)
     * [gamonal](https://web.archive.org/web/*/https://gamonal.tomalosbarrios.net/*)
@@ -161,7 +161,7 @@ Enlaces totales: 68910
     * [lasrozas](https://web.archive.org/web/*/https://lasrozas.tomalosbarrios.net/*) `91 %`
         * Fail HTTP status_code: 520, 523
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*)
-    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `38 %`
+    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `39 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 520, 523
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `48 %`
