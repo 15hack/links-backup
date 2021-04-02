@@ -1,7 +1,7 @@
 Enlaces totales: 68910
 
-* **OK**: 62961 (91 %)
-* **KO**: 5714 (8 %)
+* **OK**: 62974 (91 %)
+* **KO**: 5701 (8 %)
 * Falta: 235
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -216,7 +216,7 @@ Enlaces totales: 68910
     * [stamariadelaalameda](https://web.archive.org/web/*/https://stamariadelaalameda.tomalosbarrios.net/*)
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*)
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
-    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `49 %`
+    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `50 %`
         * Fail HTTP status_code: 520, 523
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*)
