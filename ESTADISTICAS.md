@@ -1,11 +1,11 @@
 Enlaces totales: 68910
 
-* **OK**: 62974 (91 %)
-* **KO**: 5701 (8 %)
-* Falta: 235
+* **OK**: 63000 (91 %)
+* **KO**: 5676 (8 %)
+* Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
-    * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `97 %`
+    * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 520
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
     * [dec10](https://web.archive.org/web/*/https://dec10.takethesquare.net/*)
@@ -13,14 +13,11 @@ Enlaces totales: 68910
         * Fail HTTP status_code: 520
     * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*)
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `89 %`
-        * Fail HTTP status_code: 404, 520, 523
+        * Fail HTTP status_code: 520, 523
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
-    * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*) `98 %`
-        * Fail HTTP status_code: 520
+    * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*)
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*)
-    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `93 %`
-        * Fail HTTP status_code: 404
-        * TooManyRedirects Exceeded 30 redirects.
+    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*)
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*)
     * [actasmadrid](https://web.archive.org/web/*/https://actasmadrid.tomalaplaza.net/*)
     * [alcala](https://web.archive.org/web/*/https://alcala.tomalaplaza.net/*)
@@ -58,16 +55,17 @@ Enlaces totales: 68910
     * [listas](https://web.archive.org/web/*/https://listas.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
     * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `77 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `98 %`
-        * Fail HTTP status_code: 520, 523
+        * Fail HTTP status_code: 404, 520
     * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*)
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
     * [mayo2013](https://web.archive.org/web/*/https://mayo2013.tomalaplaza.net/*)
     * [menorca](https://web.archive.org/web/*/https://menorca.tomalaplaza.net/*)
     * [mumble](https://web.archive.org/web/*/https://mumble.tomalaplaza.net/*) `96 %`
         * Fail HTTP status_code: 520
-    * [ocmdaganzo](https://web.archive.org/web/*/https://ocmdaganzo.tomalaplaza.net/*) `0 %`
+    * [ocmdaganzo](https://web.archive.org/web/*/https://ocmdaganzo.tomalaplaza.net/*)
     * [optt](https://web.archive.org/web/*/https://optt.tomalaplaza.net/*)
     * [ourense](https://web.archive.org/web/*/https://ourense.tomalaplaza.net/*)
     * [oviedo](https://web.archive.org/web/*/https://oviedo.tomalaplaza.net/*)
@@ -103,6 +101,7 @@ Enlaces totales: 68910
     * [aravaca](https://web.archive.org/web/*/https://aravaca.tomalosbarrios.net/*)
     * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*)
     * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `18 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [asamblea-sanlorenzo-escorial](https://web.archive.org/web/*/https://asamblea-sanlorenzo-escorial.tomalosbarrios.net/*)
     * [asambleademostoles](https://web.archive.org/web/*/https://asambleademostoles.tomalosbarrios.net/*)
@@ -133,20 +132,25 @@ Enlaces totales: 68910
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
     * [debatepopular](https://web.archive.org/web/*/https://debatepopular.tomalosbarrios.net/*)
     * [dosdemayo](https://web.archive.org/web/*/https://dosdemayo.tomalosbarrios.net/*) `86 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*)
     * [elejido](https://web.archive.org/web/*/https://elejido.tomalosbarrios.net/*)
     * [enbustarviejo](https://web.archive.org/web/*/https://enbustarviejo.tomalosbarrios.net/*) `86 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [foro](https://web.archive.org/web/*/https://foro.tomalosbarrios.net/*) `99.62 %`
         * Fail HTTP status_code: 523
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `53 %`
-        * Fail HTTP status_code: 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 404, 520, 523
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*)
     * [gamonal](https://web.archive.org/web/*/https://gamonal.tomalosbarrios.net/*)
     * [getafe](https://web.archive.org/web/*/https://getafe.tomalosbarrios.net/*) `49 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520, 523
+        * TooManyRedirects Exceeded 30 redirects.
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*)
     * [guadalixdelasierra](https://web.archive.org/web/*/https://guadalixdelasierra.tomalosbarrios.net/*)
     * [guadarrama](https://web.archive.org/web/*/https://guadarrama.tomalosbarrios.net/*)
@@ -159,16 +163,18 @@ Enlaces totales: 68910
     * [laelipa](https://web.archive.org/web/*/https://laelipa.tomalosbarrios.net/*)
     * [lasmatas](https://web.archive.org/web/*/https://lasmatas.tomalosbarrios.net/*)
     * [lasrozas](https://web.archive.org/web/*/https://lasrozas.tomalosbarrios.net/*) `91 %`
-        * Fail HTTP status_code: 520, 523
+        * Fail HTTP status_code: 520
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*)
     * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `39 %`
         * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 520, 523
+        * Fail HTTP status_code: 404, 520
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `48 %`
-        * Fail HTTP status_code: 404, 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 404, 520
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalosbarrios.net/*)
     * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `51 %`
+        * ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `91 %`
         * Fail HTTP status_code: 520, 523
@@ -180,7 +186,8 @@ Enlaces totales: 68910
     * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*)
     * [moralzarzal](https://web.archive.org/web/*/https://moralzarzal.tomalosbarrios.net/*)
     * [navalafuente](https://web.archive.org/web/*/https://navalafuente.tomalosbarrios.net/*) `55 %`
-        * Fail HTTP status_code: 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 520
     * [nudomanoteras](https://web.archive.org/web/*/https://nudomanoteras.tomalosbarrios.net/*) `99.75 %`
         * Fail HTTP status_code: 523
     * [nuevobaztan](https://web.archive.org/web/*/https://nuevobaztan.tomalosbarrios.net/*)
@@ -189,11 +196,12 @@ Enlaces totales: 68910
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*)
     * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `52 %`
         * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 520
+        * Fail HTTP status_code: 404, 520
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `48 %`
-        * Fail HTTP status_code: 520
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 404, 520
     * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `97 %`
-        * Fail HTTP status_code: 520, 523
+        * Fail HTTP status_code: 520
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*)
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*)
     * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*)
@@ -201,11 +209,13 @@ Enlaces totales: 68910
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*)
     * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*)
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `55 %`
-        * Fail HTTP status_code: 404, 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 520
     * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.94 %`
         * Fail HTTP status_code: 523
     * [sanblas](https://web.archive.org/web/*/https://sanblas.tomalosbarrios.net/*) `43 %`
-        * Fail HTTP status_code: 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 404, 520, 523
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
@@ -217,16 +227,19 @@ Enlaces totales: 68910
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*)
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
     * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `50 %`
-        * Fail HTTP status_code: 520, 523
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 520
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*)
     * [trescantos](https://web.archive.org/web/*/https://trescantos.tomalosbarrios.net/*)
     * [usera](https://web.archive.org/web/*/https://usera.tomalosbarrios.net/*)
     * [valdemorilloynavalagamella](https://web.archive.org/web/*/https://valdemorilloynavalagamella.tomalosbarrios.net/*)
     * [valdemoro](https://web.archive.org/web/*/https://valdemoro.tomalosbarrios.net/*) `57 %`
-        * Fail HTTP status_code: 520
+        * ConnectionError Max retries exceeded
+        * Fail HTTP status_code: 520, 523
     * [vdelacanada](https://web.archive.org/web/*/https://vdelacanada.tomalosbarrios.net/*)
     * [velilla](https://web.archive.org/web/*/https://velilla.tomalosbarrios.net/*) `53 %`
+        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 520
     * [vicalvaro](https://web.archive.org/web/*/https://vicalvaro.tomalosbarrios.net/*)
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
