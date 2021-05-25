@@ -1,7 +1,7 @@
 Enlaces totales: 68910
 
-* **OK**: 63000 (91 %)
-* **KO**: 5676 (8 %)
+* **OK**: 63007 (91 %)
+* **KO**: 5669 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -173,7 +173,7 @@ Enlaces totales: 68910
         * Fail HTTP status_code: 404, 520
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalosbarrios.net/*)
-    * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `51 %`
+    * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `52 %`
         * ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `91 %`
