@@ -4,11 +4,9 @@ from bunch import Bunch
 import requests
 import os
 from urllib.request import urlretrieve
-import random
 from textwrap import dedent
 import savepagenow
 from .writer import MDWriter
-from urllib.parse import urlparse
 from .util import *
 
 re_http = re.compile(r":\s*\bhttps?://\S+\s*:?\s*")
