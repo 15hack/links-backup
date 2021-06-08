@@ -124,6 +124,8 @@ class WebArchive:
             js = safe_json(pr)
         if js and "status_code" in js:
             return js["status_code"]
+        if js and "X-ts" in js and js['X-ts'] and js['X-ts'].isdigit():
+            return int(js['X-ts'])
         if isinstance(e, str) and " " in e.strip():
             name, desc = e.strip().split(None, 1)
             if name == "ConnectionError" and "Max retries exceeded" in desc:
