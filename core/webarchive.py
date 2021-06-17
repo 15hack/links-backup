@@ -172,6 +172,7 @@ class BulkWebArchive:
             ok = work_dir+"ok.txt",
             ko = work_dir+"ko.txt",
             hard_ko = work_dir+"hard_ko.txt",
+            falta = work_dir+"falta.txt",
         )
         if not os.path.isfile(self.f.links) and links:
             print(links, "->", self.f.links, end="\n\n")
@@ -206,7 +207,7 @@ class BulkWebArchive:
         else:
             self.ko = set(i for i in get_trunc_links(self.f.ko, self.f.hard_ko) if i in self.links and i not in self.ok)
         done = self.ok.union(self.ko)
-        self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done and get_dom(l) not in self.ignore)
+        self.queue = set(l for l in reader(self.f.links) if trunc_link(l) not in done)
         for k in "links ok ko queue".split():
             a = getattr(self, k)
             a = sorted(a, key=keylink)
@@ -228,6 +229,14 @@ class BulkWebArchive:
                 for l in ok:
                     f.write(l+"\n")
             self.reload()
+        with open(self.f.falta, "w") as f:
+            f.write("# FALTA\n")
+            for l in sorted(self.queue):
+                f.write(l+"\n")
+            f.write("\n# KO\n")
+            for l in sorted(l for l in reader(self.f.links) if trunc_link(l) in self.ko):
+                f.write(l+"\n")
+        self.queue = [l for l in self.queue if get_dom(l) not in self.ignore]
 
     def write(self, file, line):
         with open(file, "a") as f:
