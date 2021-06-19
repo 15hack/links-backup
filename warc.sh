@@ -3,15 +3,31 @@
 # https://github.com/webrecorder/replayweb.page
 # https://replayweb.page/
 
-if [ -z "$1" ] || [ ! -d "$1" ]; then
-  echo "Ha de pasar como parámetro un directorio donde se van a guardar los resultados"
-  exit 1
+OUT="warc"
+
+if [ "$1" == "--log" ]; then
+  if [ ! -d "$OUT" ]; then
+    echo "$OUT no es un directorio"
+    exit 1
+  fi
+  find "$OUT" -name "*.cdx"  -print0 |
+  while IFS= read -r -d '' CDX; do
+      echo "# $(basename $CDX)"
+      grep -ohE " https?://[^/]+" "$CDX" | sed 's|.*//||' | sort | uniq -c
+  done
+  exit 0
 fi
 
-OUT="$(realpath "$1")"
-DIR="$(realpath $(dirname "$0"))"
-LNK="$DIR/data/links.txt"
-URL="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt"
+if [ -e "$OUT" ]; then
+  if [ ! -d "$OUT" ]; then
+    echo "$OUT existe y no es un directorio"
+    exit 1
+  fi
+  if [ ! -z "$(ls -A "$OUT")" ]; then
+    echo "$OUT ha de estar vacio"
+    exit 1
+  fi
+fi
 
 exe() {
   CMD=$(echo "\$ $@" | sed "s|$HOME|~|g")
@@ -32,23 +48,26 @@ wgt() {
   echo "Exit code: $?" >> "$WOUT.log"
 }
 
-TMP="$(mktemp -d)"
-if [ ! -f "$LNK" ]; then
-  LNK="$TMP/links.txt"
-  wget -q -O "$LNK" "$URL"
-  if [ $? -ne 0 ]; then
-    echo "Error descargando $URL"
-    exit 0
-  fi
-fi
+URL="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt"
+DIR="$(realpath $(dirname "$0"))"
+mkdir -p "$OUT"
 
+TMP="$(mktemp -d)"
 echo "# WKS: $TMP"
+echo "# OUT: $OUT"
 cd "$TMP"
 
+# Ocultar carpeta destino en los logs
+OUT="$DIR/$OUT"
+ln -s "$OUT" out
+OUT="out"
 
-FRM=$(wc -l "$LNK" | cut -d' ' -f1)
-FRM="${#FRM}"
-FRM="%${FRM}s"
+LNK="$TMP/links.txt"
+wget -q -O "$LNK" "$URL"
+if [ $? -ne 0 ]; then
+  echo "Error descargando $URL"
+  exit 1
+fi
 
 function do_wgt {
   if [ -f "$1" ]; then
@@ -64,14 +83,11 @@ function do_wgt {
   fi
 }
 
+grep -E "/mailman/listinfo$" "$LNK" > mail.txt
+grep -vE "/mailman/(pipermail|listinfo)" "$LNK" > webs.txt
 
-rm -R "$OUT"
-mkdir -p "$OUT"
-# Ocultar carpeta destino en los logs
-ln -s "$OUT" out
-OUT="out"
-
-cat "$LNK" | grep -E "^https?://[^/]*" -oh | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' > out/15M.txt
+cat mail.txt | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' > out/15M.txt
+cat webs.txt | grep -E "^https?://[^/]*" -oh | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' >> out/15M.txt
 do_wgt out/15M.txt
 
 #cat out/15M.txt | while read URL; do

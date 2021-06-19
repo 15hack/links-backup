@@ -1,3 +1,5 @@
+warc/*
+archive.is.sh
 copy.sh
 nohup.out
 data/old
