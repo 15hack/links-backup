@@ -49,7 +49,8 @@ wgt() {
 }
 
 URL="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt"
-DIR="$(realpath $(dirname "$0"))"
+ROT="https://15hack.github.io/web-backup/out/links.html"
+DIR="$(pwd)"
 mkdir -p "$OUT"
 
 TMP="$(mktemp -d)"
@@ -70,7 +71,11 @@ if [ $? -ne 0 ]; then
 fi
 
 function do_wgt {
-  if [ -f "$1" ]; then
+  if [ "$1" == "$ROT" ]; then
+    DOMS=$(cat "$LNK" | cut -d'/' -f3 | sort | uniq | tr '\n' ',' | sed 's|,$||')
+    echo "# $1"
+    wgt --span-hosts --domains="$DOMS" --warc-file="$OUT/15M" "$ROT"
+  elif [ -f "$1" ]; then
     INFL="$1"
     NAME=$(basename "$INFL" | sed 's|\.[^\.]*$||')
     echo "# $LNKS"
@@ -83,12 +88,14 @@ function do_wgt {
   fi
 }
 
-grep -E "/mailman/listinfo$" "$LNK" > mail.txt
-grep -vE "/mailman/(pipermail|listinfo)" "$LNK" > webs.txt
+do_wgt "$ROT"
 
-cat mail.txt | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' > out/15M.txt
-cat webs.txt | grep -E "^https?://[^/]*" -oh | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' >> out/15M.txt
-do_wgt out/15M.txt
+#grep -E "/mailman/listinfo$" "$LNK" > mail.txt
+#grep -vE "/mailman/(pipermail|listinfo)" "$LNK" > webs.txt
+
+#cat mail.txt | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' > out/15M.txt
+#cat webs.txt | grep -E "^https?://[^/]*" -oh | sort | uniq -c | sort -n -r | sed 's|^[ 0-9]*||' | awk -F'/' '!visited[$3]++' >> out/15M.txt
+#do_wgt out/15M.txt
 
 #cat out/15M.txt | while read URL; do
 #  do_wgt "$URL"
