@@ -6,14 +6,24 @@
 OUT="warc"
 
 if [ "$1" == "--log" ]; then
+  if [ ! -z "$2" ]; then
+     OUT="$2"
+  fi
   if [ ! -d "$OUT" ]; then
     echo "$OUT no es un directorio"
     exit 1
   fi
-  find "$OUT" -name "*.cdx"  -print0 |
-  while IFS= read -r -d '' CDX; do
-      echo "# $(basename $CDX)"
-      grep -ohE " https?://[^/]+" "$CDX" | sed 's|.*//||' | sort | uniq -c
+  find "$OUT" -name "*.warc" -o -name "*.warc.gz"  -print0 |
+  while IFS= read -r -d '' WRC; do
+      CDX=$(echo "$WRC" | sed -E 's|\.warc(\.gz)?$|.cdx|g')
+      SZ=$(ls -lah "$WRC" | cut -d' ' -f5)
+      echo "# $(basename $WRC) $SZ"
+      if [ -f "$CDX" ]; then
+          grep -ohE " https?://[^/]+" "$CDX" | sed 's|.*//||' | sort | uniq -c
+          echo "-----------------------"
+          TT=$(grep -ohE " https?://[^/]+" "$CDX" | wc -l)
+          echo "$TT $(basename $WRC) $SZ "
+      fi
   done
   exit 0
 fi
