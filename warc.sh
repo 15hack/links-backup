@@ -19,13 +19,12 @@ if [ "$1" == "--log" ]; then
       SZ=$(ls -lah "$WRC" | cut -d' ' -f5)
       echo "# $(basename $WRC) $SZ"
       if [ -f "$CDX" ]; then
-          grep -ohE " https?://[^/]+" "$CDX" | sed 's|.*//||' | sort | uniq -c
-          echo "-----------------------"
-          TT=$(grep -ohE " https?://[^/]+" "$CDX" | wc -l)
-          echo "$TT $(basename $WRC) $SZ "
+          grep -ohE " https?://[^/]+" "$CDX" | sed 's|.*//|ZZZZTOTAL\n|' | sort | uniq -c | sed "s| ZZZZTOTAL| TOTAL ($SZ)|"
       fi
   done
   exit 0
+elif [ ! -z "$1" ]; then
+  OUT="$1"
 fi
 
 if [ -e "$OUT" ]; then
@@ -38,6 +37,11 @@ if [ -e "$OUT" ]; then
     exit 1
   fi
 fi
+mkdir "$OUT"
+if [ $? -ne 0 ]; then
+  echo "No se ha podido crear el directorio $OUT"
+  exit 1
+fi
 
 exe() {
   CMD=$(echo "\$ $@" | sed "s|$HOME|~|g")
@@ -48,6 +52,7 @@ wgt() {
   # --warc-cdx
   WOUT=$(echo "$@" | sed 's|.*--warc-file=||' | cut -d' ' -f1)
   exe wget --no-check-certificate --no-verbose \
+  --execute robots=off \
   --delete-after --no-directories \
   --page-requisites \
   --mirror \
@@ -61,7 +66,6 @@ wgt() {
 URL="https://raw.githubusercontent.com/15hack/web-backup/main/out/links.txt"
 ROT="https://15hack.github.io/web-backup/out/links.html"
 DIR="$(pwd)"
-mkdir -p "$OUT"
 
 TMP="$(mktemp -d)"
 echo "# WKS: $TMP"
