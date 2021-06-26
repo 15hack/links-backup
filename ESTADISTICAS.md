@@ -1,7 +1,7 @@
 Enlaces totales: 68914
 
-* **OK**: 63189 (92 %)
-* **KO**: 5491 (8 %)
+* **OK**: 63190 (92 %)
+* **KO**: 5490 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -121,7 +121,7 @@ Enlaces totales: 68914
     * [ciempozuelos](https://web.archive.org/web/*/https://ciempozuelos.tomalosbarrios.net/*)
     * [ciudadlineal](https://web.archive.org/web/*/https://ciudadlineal.tomalosbarrios.net/*)
     * [colladomediano](https://web.archive.org/web/*/https://colladomediano.tomalosbarrios.net/*)
-    * [colladovillalba](https://web.archive.org/web/*/https://colladovillalba.tomalosbarrios.net/*) `93 %`
+    * [colladovillalba](https://web.archive.org/web/*/https://colladovillalba.tomalosbarrios.net/*) `94 %`
         * Fail HTTP status_code: 404, 520
     * [colmenarejo](https://web.archive.org/web/*/https://colmenarejo.tomalosbarrios.net/*)
     * [colmenarviejo](https://web.archive.org/web/*/https://colmenarviejo.tomalosbarrios.net/*)
