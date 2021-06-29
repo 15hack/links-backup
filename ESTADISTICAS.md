@@ -1,7 +1,7 @@
 Enlaces totales: 68914
 
-* **OK**: 63190 (92 %)
-* **KO**: 5490 (8 %)
+* **OK**: 63285 (92 %)
+* **KO**: 5395 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -54,9 +54,9 @@ Enlaces totales: 68914
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
-    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `77 %`
+    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `80 %`
         * Fail HTTP status_code: 520
-    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `98 %`
+    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99 %`
         * Fail HTTP status_code: 404, 520
     * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*)
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
@@ -217,7 +217,7 @@ Enlaces totales: 68914
     * [stamariadelaalameda](https://web.archive.org/web/*/https://stamariadelaalameda.tomalosbarrios.net/*)
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*)
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
-    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `50 %`
+    * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `53 %`
         * Fail HTTP status_code: 404, 509, 520
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*)
