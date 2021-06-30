@@ -1,7 +1,7 @@
 Enlaces totales: 68914
 
-* **OK**: 63285 (92 %)
-* **KO**: 5395 (8 %)
+* **OK**: 63321 (92 %)
+* **KO**: 5359 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -54,7 +54,7 @@ Enlaces totales: 68914
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
-    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `80 %`
+    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `87 %`
         * Fail HTTP status_code: 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99 %`
         * Fail HTTP status_code: 404, 520
