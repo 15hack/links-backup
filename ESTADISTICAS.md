@@ -1,7 +1,7 @@
 Enlaces totales: 68914
 
-* **OK**: 63321 (92 %)
-* **KO**: 5359 (8 %)
+* **OK**: 63348 (92 %)
+* **KO**: 5332 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -46,17 +46,17 @@ Enlaces totales: 68914
     * [gasteiz](https://web.archive.org/web/*/https://gasteiz.tomalaplaza.net/*)
     * [granada](https://web.archive.org/web/*/https://granada.tomalaplaza.net/*)
     * [hacksol](https://web.archive.org/web/*/https://hacksol.tomalaplaza.net/*)
-    * [ibiza](https://web.archive.org/web/*/https://ibiza.tomalaplaza.net/*) `99.52 %`
-        * Fail HTTP status_code: 404, 520
+    * [ibiza](https://web.archive.org/web/*/https://ibiza.tomalaplaza.net/*) `99.76 %`
+        * Fail HTTP status_code: 520
     * [jerez](https://web.archive.org/web/*/https://jerez.tomalaplaza.net/*)
     * [jitsi](https://web.archive.org/web/*/https://jitsi.tomalaplaza.net/*)
     * [laspalmas](https://web.archive.org/web/*/https://laspalmas.tomalaplaza.net/*)
     * [leon](https://web.archive.org/web/*/https://leon.tomalaplaza.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalaplaza.net/*)
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
-    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `87 %`
+    * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `93 %`
         * Fail HTTP status_code: 520
-    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99 %`
+    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99.60 %`
         * Fail HTTP status_code: 404, 520
     * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*)
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
