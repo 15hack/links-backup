@@ -1,10 +1,10 @@
-Enlaces totales: 68914
+Enlaces totales: 68919
 
-* **OK**: 63348 (92 %)
-* **KO**: 5332 (8 %)
-* Falta: 234
+* **OK**: 63351 (92 %)
+* **KO**: 5329 (8 %)
+* Falta: 239
 
-* [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
+* [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*) `99.75 %`
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 404, 520
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
@@ -99,7 +99,7 @@ Enlaces totales: 68914
     * [aluche](https://web.archive.org/web/*/https://aluche.tomalosbarrios.net/*)
     * [aravaca](https://web.archive.org/web/*/https://aravaca.tomalosbarrios.net/*)
     * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*)
-    * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `59 %`
+    * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `60 %`
         * Fail HTTP status_code: 404, 520
     * [asamblea-sanlorenzo-escorial](https://web.archive.org/web/*/https://asamblea-sanlorenzo-escorial.tomalosbarrios.net/*)
     * [asambleademostoles](https://web.archive.org/web/*/https://asambleademostoles.tomalosbarrios.net/*)
