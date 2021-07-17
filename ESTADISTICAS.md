@@ -1,7 +1,7 @@
 Enlaces totales: 68919
 
-* **OK**: 63351 (92 %)
-* **KO**: 5329 (8 %)
+* **OK**: 63359 (92 %)
+* **KO**: 5321 (8 %)
 * Falta: 239
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*) `99.75 %`
@@ -12,7 +12,7 @@ Enlaces totales: 68919
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `99.70 %`
         * Fail HTTP status_code: 520
     * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*)
-    * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `94 %`
+    * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `95 %`
         * Fail HTTP status_code: 404, 520, 523
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*)
@@ -56,7 +56,7 @@ Enlaces totales: 68919
     * [lleida](https://web.archive.org/web/*/https://lleida.tomalaplaza.net/*)
     * [logrono](https://web.archive.org/web/*/https://logrono.tomalaplaza.net/*) `93 %`
         * Fail HTTP status_code: 520
-    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99.60 %`
+    * [madrid](https://web.archive.org/web/*/https://madrid.tomalaplaza.net/*) `99.66 %`
         * Fail HTTP status_code: 404, 520
     * [madridocm](https://web.archive.org/web/*/https://madridocm.tomalaplaza.net/*)
     * [malaga](https://web.archive.org/web/*/https://malaga.tomalaplaza.net/*)
