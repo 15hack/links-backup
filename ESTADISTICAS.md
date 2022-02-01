@@ -1,7 +1,7 @@
 Enlaces totales: 68919
 
-* **OK**: 63454 (92 %)
-* **KO**: 5231 (8 %)
+* **OK**: 63464 (92 %)
+* **KO**: 5221 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -11,7 +11,7 @@ Enlaces totales: 68919
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `99.70 %`
         * Fail HTTP status_code: 429
     * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*)
-    * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `97 %`
+    * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 429, 520, 523
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*)
@@ -159,7 +159,7 @@ Enlaces totales: 68919
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 429, 520
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*)
-    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `39 %`
+    * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `40 %`
         * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 429, 520
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `48 %`
