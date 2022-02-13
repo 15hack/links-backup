@@ -1,7 +1,7 @@
 Enlaces totales: 68910
 
-* **OK**: 63466 (92 %)
-* **KO**: 5210 (8 %)
+* **OK**: 63468 (92 %)
+* **KO**: 5208 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
@@ -12,7 +12,7 @@ Enlaces totales: 68910
         * Fail HTTP status_code: 520
     * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*)
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `98 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 404, 429, 520
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*)
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*)
@@ -81,10 +81,10 @@ Enlaces totales: 68910
     * [valencia](https://web.archive.org/web/*/https://valencia.tomalaplaza.net/*)
     * [vegadeltajuna](https://web.archive.org/web/*/https://vegadeltajuna.tomalaplaza.net/*)
     * [vemail](https://web.archive.org/web/*/https://vemail.tomalaplaza.net/*) `67 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 520
     * [vigo](https://web.archive.org/web/*/https://vigo.tomalaplaza.net/*)
     * [wiki](https://web.archive.org/web/*/https://wiki.tomalaplaza.net/*) `99 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 520
     * [zamora](https://web.archive.org/web/*/https://zamora.tomalaplaza.net/*)
     * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalaplaza.net/*)
 * [tomalosbarrios.net](https://web.archive.org/web/*/https://tomalosbarrios.net/*)
@@ -94,7 +94,7 @@ Enlaces totales: 68910
     * [aravaca](https://web.archive.org/web/*/https://aravaca.tomalosbarrios.net/*)
     * [arganzuela](https://web.archive.org/web/*/https://arganzuela.tomalosbarrios.net/*)
     * [arroyomolinos](https://web.archive.org/web/*/https://arroyomolinos.tomalosbarrios.net/*) `65 %`
-        * Fail HTTP status_code: 429, 520, 523
+        * Fail HTTP status_code: 429, 520
     * [asamblea-sanlorenzo-escorial](https://web.archive.org/web/*/https://asamblea-sanlorenzo-escorial.tomalosbarrios.net/*)
     * [asambleademostoles](https://web.archive.org/web/*/https://asambleademostoles.tomalosbarrios.net/*)
     * [asambleaplayasalicante](https://web.archive.org/web/*/https://asambleaplayasalicante.tomalosbarrios.net/*)
@@ -116,7 +116,7 @@ Enlaces totales: 68910
     * [ciudadlineal](https://web.archive.org/web/*/https://ciudadlineal.tomalosbarrios.net/*)
     * [colladomediano](https://web.archive.org/web/*/https://colladomediano.tomalosbarrios.net/*)
     * [colladovillalba](https://web.archive.org/web/*/https://colladovillalba.tomalosbarrios.net/*) `94 %`
-        * Fail HTTP status_code: 429, 520, 523
+        * Fail HTTP status_code: 429, 520
     * [colmenarejo](https://web.archive.org/web/*/https://colmenarejo.tomalosbarrios.net/*)
     * [colmenarviejo](https://web.archive.org/web/*/https://colmenarviejo.tomalosbarrios.net/*)
     * [coslada](https://web.archive.org/web/*/https://coslada.tomalosbarrios.net/*)
@@ -124,52 +124,43 @@ Enlaces totales: 68910
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
     * [debatepopular](https://web.archive.org/web/*/https://debatepopular.tomalosbarrios.net/*)
     * [dosdemayo](https://web.archive.org/web/*/https://dosdemayo.tomalosbarrios.net/*) `86 %`
-        * Fail HTTP status_code: 404, 429, 520
+        * Fail HTTP status_code: 429, 520
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*)
     * [elejido](https://web.archive.org/web/*/https://elejido.tomalosbarrios.net/*)
     * [enbustarviejo](https://web.archive.org/web/*/https://enbustarviejo.tomalosbarrios.net/*) `86 %`
-        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 429, 520
-        * SSLError HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /save/https://enbustarviejo.tomalosbarrios.net/2011/12/01/asamblea-de-comunicacion-sierra-norte-en-navalafuente-el-2122011/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
     * [foro](https://web.archive.org/web/*/https://foro.tomalosbarrios.net/*)
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `54 %`
-        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 429, 520
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*)
     * [gamonal](https://web.archive.org/web/*/https://gamonal.tomalosbarrios.net/*)
     * [getafe](https://web.archive.org/web/*/https://getafe.tomalosbarrios.net/*) `49 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 429, 520, 523
+        * Fail HTTP status_code: 404, 429, 520, 523
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*)
     * [guadalixdelasierra](https://web.archive.org/web/*/https://guadalixdelasierra.tomalosbarrios.net/*)
     * [guadarrama](https://web.archive.org/web/*/https://guadarrama.tomalosbarrios.net/*)
     * [guindalera](https://web.archive.org/web/*/https://guindalera.tomalosbarrios.net/*)
     * [hortaleza](https://web.archive.org/web/*/https://hortaleza.tomalosbarrios.net/*) `90 %`
-        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 429, 520, 523
-        * SSLError HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /save/https://hortaleza.tomalosbarrios.net/2012/11/01/proxima-asamblea-sabado-3-de-octubre/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
     * [hoyodemanzanares](https://web.archive.org/web/*/https://hoyodemanzanares.tomalosbarrios.net/*)
     * [laconce](https://web.archive.org/web/*/https://laconce.tomalosbarrios.net/*) `99.82 %`
-        * Fail HTTP status_code: 520
+        * Fail HTTP status_code: 429
     * [laelipa](https://web.archive.org/web/*/https://laelipa.tomalosbarrios.net/*)
     * [lasmatas](https://web.archive.org/web/*/https://lasmatas.tomalosbarrios.net/*)
     * [lasrozas](https://web.archive.org/web/*/https://lasrozas.tomalosbarrios.net/*) `91 %`
-        * Fail HTTP status_code: 429, 520, 523
+        * Fail HTTP status_code: 429, 520
     * [lastablassanchinarro](https://web.archive.org/web/*/https://lastablassanchinarro.tomalosbarrios.net/*)
     * [lavapies](https://web.archive.org/web/*/https://lavapies.tomalosbarrios.net/*) `40 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 429, 520, 523
+        * Fail HTTP status_code: 404, 429, 520
     * [leganes](https://web.archive.org/web/*/https://leganes.tomalosbarrios.net/*) `48 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 429, 520, 523
-        * SSLError HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /save/https://leganes.tomalosbarrios.net/2011/07/20/acta-coordinadora-de-comisiones-8072011/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
+        * Fail HTTP status_code: 404, 429, 520, 523
     * [letras](https://web.archive.org/web/*/https://letras.tomalosbarrios.net/*)
     * [listas](https://web.archive.org/web/*/https://listas.tomalosbarrios.net/*)
     * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `52 %`
-        * Fail HTTP status_code: 404, 429, 520, 523
+        * Fail HTTP status_code: 404, 429, 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `91 %`
-        * Fail HTTP status_code: 429, 520, 523
+        * Fail HTTP status_code: 404, 429, 520
     * [madridsur](https://web.archive.org/web/*/https://madridsur.tomalosbarrios.net/*)
     * [majadahonda](https://web.archive.org/web/*/https://majadahonda.tomalosbarrios.net/*)
     * [mataro](https://web.archive.org/web/*/https://mataro.tomalosbarrios.net/*)
@@ -178,9 +169,7 @@ Enlaces totales: 68910
     * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*)
     * [moralzarzal](https://web.archive.org/web/*/https://moralzarzal.tomalosbarrios.net/*)
     * [navalafuente](https://web.archive.org/web/*/https://navalafuente.tomalosbarrios.net/*) `55 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 429, 520, 523
-        * SSLError HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /save/https://navalafuente.tomalosbarrios.net/2012/02/28/consulta-social-sobre-la-privatizacion-del-canal-de-isabel-ii/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
+        * Fail HTTP status_code: 429, 520
     * [nudomanoteras](https://web.archive.org/web/*/https://nudomanoteras.tomalosbarrios.net/*) `99.75 %`
         * Fail HTTP status_code: 429
     * [nuevobaztan](https://web.archive.org/web/*/https://nuevobaztan.tomalosbarrios.net/*)
@@ -188,12 +177,11 @@ Enlaces totales: 68910
     * [parla](https://web.archive.org/web/*/https://parla.tomalosbarrios.net/*)
     * [parlaverde](https://web.archive.org/web/*/https://parlaverde.tomalosbarrios.net/*)
     * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `52 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 429, 520, 523
+        * Fail HTTP status_code: 429, 520, 523
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `49 %`
-        * Fail HTTP status_code: 404, 429, 520, 523
-    * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `98 %`
         * Fail HTTP status_code: 429, 520
+    * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `98 %`
+        * Fail HTTP status_code: 429, 520, 523
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*)
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*)
     * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*)
@@ -201,14 +189,11 @@ Enlaces totales: 68910
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*)
     * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*)
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `55 %`
-        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 429, 520
-        * SSLError HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /save/https://retiro.tomalosbarrios.net/2014/02/07/y-manana-sabado-dia-8-a-decirle-de-nuevo-a-gallardon-no-a-la-reforma-de-la-ley-del-aborto/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')",),))
     * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.94 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 520
     * [sanblas](https://web.archive.org/web/*/https://sanblas.tomalosbarrios.net/*) `43 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 429, 520, 523
+        * Fail HTTP status_code: 200, 404, 429, 520, 523
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
@@ -220,7 +205,6 @@ Enlaces totales: 68910
     * [tetuan](https://web.archive.org/web/*/https://tetuan.tomalosbarrios.net/*)
     * [torrejon](https://web.archive.org/web/*/https://torrejon.tomalosbarrios.net/*)
     * [torrelaguna](https://web.archive.org/web/*/https://torrelaguna.tomalosbarrios.net/*) `54 %`
-        * ConnectionError Max retries exceeded
         * Fail HTTP status_code: 404, 429, 520, 523
     * [torrelodones](https://web.archive.org/web/*/https://torrelodones.tomalosbarrios.net/*)
     * [torresalameda](https://web.archive.org/web/*/https://torresalameda.tomalosbarrios.net/*)
@@ -228,16 +212,14 @@ Enlaces totales: 68910
     * [usera](https://web.archive.org/web/*/https://usera.tomalosbarrios.net/*)
     * [valdemorilloynavalagamella](https://web.archive.org/web/*/https://valdemorilloynavalagamella.tomalosbarrios.net/*)
     * [valdemoro](https://web.archive.org/web/*/https://valdemoro.tomalosbarrios.net/*) `57 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 404, 429, 520
+        * Fail HTTP status_code: 429, 520
     * [vdelacanada](https://web.archive.org/web/*/https://vdelacanada.tomalosbarrios.net/*)
     * [velilla](https://web.archive.org/web/*/https://velilla.tomalosbarrios.net/*) `53 %`
-        * ConnectionError Max retries exceeded
-        * Fail HTTP status_code: 200, 404, 429, 520
+        * Fail HTTP status_code: 429, 520
     * [vicalvaro](https://web.archive.org/web/*/https://vicalvaro.tomalosbarrios.net/*)
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
     * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `99.94 %`
-        * Fail HTTP status_code: 520
+        * Fail HTTP status_code: 523
     * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalosbarrios.net/*)
     * [zarzalejo](https://web.archive.org/web/*/https://zarzalejo.tomalosbarrios.net/*)
 * [madrid15m.org](https://web.archive.org/web/*/https://madrid15m.org/*)
