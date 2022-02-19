@@ -229,13 +229,16 @@ class BulkWebArchive:
                 for l in ok:
                     f.write(l+"\n")
             self.reload()
+        def wr_file(f, head, lst, ignore):
+            lst = sorted([l for l in lst if get_dom(l) not in ignore])
+            if len(lst)==0:
+                return
+            f.write("# {}\n".format(head))
+            for l in lst:
+                f.write(l+"\n")
         with open(self.f.falta, "w") as f:
-            f.write("# FALTA\n")
-            for l in sorted(self.queue):
-                f.write(l+"\n")
-            f.write("\n# KO\n")
-            for l in sorted(l for l in reader(self.f.links) if trunc_link(l) in self.ko):
-                f.write(l+"\n")
+            wr_file(f, "FALTA", self.queue, self.ignore)
+            wr_file(f, "KO", (l for l in reader(self.f.links) if trunc_link(l) in self.ko), self.ignore)
         self.queue = [l for l in self.queue if get_dom(l) not in self.ignore]
 
     def write(self, file, line):
