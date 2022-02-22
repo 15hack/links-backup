@@ -1,7 +1,7 @@
 Enlaces totales: 68910
 
-* **OK**: 63468 (92 %)
-* **KO**: 5208 (8 %)
+* **OK**: 63469 (92 %)
+* **KO**: 5207 (8 %)
 * Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
