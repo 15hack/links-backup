@@ -1,8 +1,8 @@
 Enlaces totales: 68911
 
-* **OK**: 63469 (92 %)
+* **OK**: 63470 (92 %)
 * **KO**: 5207 (8 %)
-* Falta: 235
+* Falta: 234
 
 * [takethesquare.net](https://web.archive.org/web/*/https://takethesquare.net/*)
     * [15oct](https://web.archive.org/web/*/https://15oct.takethesquare.net/*)
@@ -16,7 +16,7 @@ Enlaces totales: 68911
     * [radio](https://web.archive.org/web/*/https://radio.takethesquare.net/*)
     * [transitionday](https://web.archive.org/web/*/https://transitionday.takethesquare.net/*)
 * [tomalaplaza.net](https://web.archive.org/web/*/https://tomalaplaza.net/*)
-    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*) `99 %`
+    * [15hack](https://web.archive.org/web/*/https://15hack.tomalaplaza.net/*)
     * [15m20](https://web.archive.org/web/*/https://15m20.tomalaplaza.net/*)
     * [actasmadrid](https://web.archive.org/web/*/https://actasmadrid.tomalaplaza.net/*)
     * [alcala](https://web.archive.org/web/*/https://alcala.tomalaplaza.net/*)
