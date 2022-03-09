@@ -9,7 +9,7 @@ Enlaces totales: 68911
     * [antibanks](https://web.archive.org/web/*/https://antibanks.takethesquare.net/*)
     * [dec10](https://web.archive.org/web/*/https://dec10.takethesquare.net/*)
     * [howtocamp](https://web.archive.org/web/*/https://howtocamp.takethesquare.net/*) `99.70 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 520
     * [lists](https://web.archive.org/web/*/https://lists.takethesquare.net/*)
     * [marchestobrussels](https://web.archive.org/web/*/https://marchestobrussels.takethesquare.net/*) `98 %`
         * Fail HTTP status_code: 429, 520
@@ -81,10 +81,10 @@ Enlaces totales: 68911
     * [valencia](https://web.archive.org/web/*/https://valencia.tomalaplaza.net/*)
     * [vegadeltajuna](https://web.archive.org/web/*/https://vegadeltajuna.tomalaplaza.net/*)
     * [vemail](https://web.archive.org/web/*/https://vemail.tomalaplaza.net/*) `67 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 523
     * [vigo](https://web.archive.org/web/*/https://vigo.tomalaplaza.net/*)
     * [wiki](https://web.archive.org/web/*/https://wiki.tomalaplaza.net/*) `99 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 429, 520
     * [zamora](https://web.archive.org/web/*/https://zamora.tomalaplaza.net/*)
     * [zaragoza](https://web.archive.org/web/*/https://zaragoza.tomalaplaza.net/*)
 * [tomalosbarrios.net](https://web.archive.org/web/*/https://tomalosbarrios.net/*)
@@ -108,7 +108,7 @@ Enlaces totales: 68911
     * [boalo](https://web.archive.org/web/*/https://boalo.tomalosbarrios.net/*)
     * [canadareal](https://web.archive.org/web/*/https://canadareal.tomalosbarrios.net/*)
     * [cercedilla](https://web.archive.org/web/*/https://cercedilla.tomalosbarrios.net/*) `98 %`
-        * Fail HTTP status_code: 429
+        * Fail HTTP status_code: 429, 523
     * [chamartin](https://web.archive.org/web/*/https://chamartin.tomalosbarrios.net/*)
     * [chapineria](https://web.archive.org/web/*/https://chapineria.tomalosbarrios.net/*)
     * [chueca](https://web.archive.org/web/*/https://chueca.tomalosbarrios.net/*)
@@ -124,7 +124,7 @@ Enlaces totales: 68911
     * [debatedelpueblo](https://web.archive.org/web/*/https://debatedelpueblo.tomalosbarrios.net/*)
     * [debatepopular](https://web.archive.org/web/*/https://debatepopular.tomalosbarrios.net/*)
     * [dosdemayo](https://web.archive.org/web/*/https://dosdemayo.tomalosbarrios.net/*) `86 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 404, 429, 520
     * [elalamo](https://web.archive.org/web/*/https://elalamo.tomalosbarrios.net/*)
     * [elejido](https://web.archive.org/web/*/https://elejido.tomalosbarrios.net/*)
     * [enbustarviejo](https://web.archive.org/web/*/https://enbustarviejo.tomalosbarrios.net/*) `86 %`
@@ -132,17 +132,17 @@ Enlaces totales: 68911
     * [foro](https://web.archive.org/web/*/https://foro.tomalosbarrios.net/*)
     * [fuencarral](https://web.archive.org/web/*/https://fuencarral.tomalosbarrios.net/*)
     * [fuenlabrada](https://web.archive.org/web/*/https://fuenlabrada.tomalosbarrios.net/*) `54 %`
-        * Fail HTTP status_code: 404, 429, 520
+        * Fail HTTP status_code: 200, 404, 429, 520
     * [galapagar](https://web.archive.org/web/*/https://galapagar.tomalosbarrios.net/*)
     * [gamonal](https://web.archive.org/web/*/https://gamonal.tomalosbarrios.net/*)
     * [getafe](https://web.archive.org/web/*/https://getafe.tomalosbarrios.net/*) `49 %`
-        * Fail HTTP status_code: 404, 429, 520
+        * Fail HTTP status_code: 404, 429, 520, 523
     * [grancanaria](https://web.archive.org/web/*/https://grancanaria.tomalosbarrios.net/*)
     * [guadalixdelasierra](https://web.archive.org/web/*/https://guadalixdelasierra.tomalosbarrios.net/*)
     * [guadarrama](https://web.archive.org/web/*/https://guadarrama.tomalosbarrios.net/*)
     * [guindalera](https://web.archive.org/web/*/https://guindalera.tomalosbarrios.net/*)
     * [hortaleza](https://web.archive.org/web/*/https://hortaleza.tomalosbarrios.net/*) `90 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 429, 520, 523
     * [hoyodemanzanares](https://web.archive.org/web/*/https://hoyodemanzanares.tomalosbarrios.net/*)
     * [laconce](https://web.archive.org/web/*/https://laconce.tomalosbarrios.net/*) `99.82 %`
         * Fail HTTP status_code: 429
@@ -160,7 +160,7 @@ Enlaces totales: 68911
     * [lucero](https://web.archive.org/web/*/https://lucero.tomalosbarrios.net/*) `52 %`
         * Fail HTTP status_code: 404, 429, 520
     * [madrid](https://web.archive.org/web/*/https://madrid.tomalosbarrios.net/*) `91 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 429, 520, 523
     * [madridsur](https://web.archive.org/web/*/https://madridsur.tomalosbarrios.net/*)
     * [majadahonda](https://web.archive.org/web/*/https://majadahonda.tomalosbarrios.net/*)
     * [mataro](https://web.archive.org/web/*/https://mataro.tomalosbarrios.net/*)
@@ -169,7 +169,7 @@ Enlaces totales: 68911
     * [montecarmelo](https://web.archive.org/web/*/https://montecarmelo.tomalosbarrios.net/*)
     * [moralzarzal](https://web.archive.org/web/*/https://moralzarzal.tomalosbarrios.net/*)
     * [navalafuente](https://web.archive.org/web/*/https://navalafuente.tomalosbarrios.net/*) `55 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 404, 429, 520
     * [nudomanoteras](https://web.archive.org/web/*/https://nudomanoteras.tomalosbarrios.net/*) `99.75 %`
         * Fail HTTP status_code: 429
     * [nuevobaztan](https://web.archive.org/web/*/https://nuevobaztan.tomalosbarrios.net/*)
@@ -179,9 +179,9 @@ Enlaces totales: 68911
     * [paseoextremadura](https://web.archive.org/web/*/https://paseoextremadura.tomalosbarrios.net/*) `52 %`
         * Fail HTTP status_code: 404, 429, 520
     * [pedrezuela](https://web.archive.org/web/*/https://pedrezuela.tomalosbarrios.net/*) `49 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 404, 429, 520
     * [pedriza](https://web.archive.org/web/*/https://pedriza.tomalosbarrios.net/*) `98 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 429, 520, 523
     * [piedragrande](https://web.archive.org/web/*/https://piedragrande.tomalosbarrios.net/*)
     * [pinto](https://web.archive.org/web/*/https://pinto.tomalosbarrios.net/*)
     * [plazadali](https://web.archive.org/web/*/https://plazadali.tomalosbarrios.net/*)
@@ -189,11 +189,11 @@ Enlaces totales: 68911
     * [prosperidad](https://web.archive.org/web/*/https://prosperidad.tomalosbarrios.net/*)
     * [pueblonuevo](https://web.archive.org/web/*/https://pueblonuevo.tomalosbarrios.net/*)
     * [retiro](https://web.archive.org/web/*/https://retiro.tomalosbarrios.net/*) `55 %`
-        * Fail HTTP status_code: 429, 520
-    * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.94 %`
-        * Fail HTTP status_code: 429
-    * [sanblas](https://web.archive.org/web/*/https://sanblas.tomalosbarrios.net/*) `43 %`
         * Fail HTTP status_code: 404, 429, 520
+    * [rivas](https://web.archive.org/web/*/https://rivas.tomalosbarrios.net/*) `99.94 %`
+        * Fail HTTP status_code: 523
+    * [sanblas](https://web.archive.org/web/*/https://sanblas.tomalosbarrios.net/*) `43 %`
+        * Fail HTTP status_code: 404, 429, 520, 523
     * [sanfernandodehenares](https://web.archive.org/web/*/https://sanfernandodehenares.tomalosbarrios.net/*)
     * [sanmartindelavega](https://web.archive.org/web/*/https://sanmartindelavega.tomalosbarrios.net/*)
     * [sesena](https://web.archive.org/web/*/https://sesena.tomalosbarrios.net/*)
@@ -215,7 +215,7 @@ Enlaces totales: 68911
         * Fail HTTP status_code: 429, 520
     * [vdelacanada](https://web.archive.org/web/*/https://vdelacanada.tomalosbarrios.net/*)
     * [velilla](https://web.archive.org/web/*/https://velilla.tomalosbarrios.net/*) `53 %`
-        * Fail HTTP status_code: 429, 520
+        * Fail HTTP status_code: 404, 429, 520
     * [vicalvaro](https://web.archive.org/web/*/https://vicalvaro.tomalosbarrios.net/*)
     * [villadevallecas](https://web.archive.org/web/*/https://villadevallecas.tomalosbarrios.net/*)
     * [villaverde](https://web.archive.org/web/*/https://villaverde.tomalosbarrios.net/*) `99.94 %`
